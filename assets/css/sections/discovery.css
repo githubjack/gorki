@@ -1,0 +1,63 @@
+
+.discovery {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+
+.discovery .info-graphic {
+    flex:1;
+}
+
+.info-graphic img {
+    width:100%;
+    object-fit: cover;
+}
+@media (prefers-reduced-motion: no-preference) {
+
+    .info-graphic > img {
+        scale: .8; 
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        /* animation-range-start: contain;
+        animation-range-end: contain; */
+        /* animation-range: contain;
+        animation-range: exit; */
+        animation-range: entry;
+    }
+
+    @keyframes fade-in {
+        /* from { scale: .8; opacity: 0; } */
+        to { scale: 1; opacity: 1;}
+    }
+
+}
+
+
+.discovery .info-text {
+    flex:1;
+}
+.info-text .first {
+    padding-inline-start: 102px;
+}
+
+.info-text .last {
+    padding-inline-end: 102px;
+}
+.info-text h2 {
+    margin-block-end:1rem;
+}
+
+.info-text p {
+    /* Discover how our platform transforms the landscape of decentralized healthcare, introduces GorDrive for secure on-chain file storage, and unleashes the potential of game development with advanced engine SDKs. At the heart of our ecosystem, atomic transactions redefine data storage and content delivery, ensuring your digital sovereignty and privacy are paramount. Our commitment to data privacy and self-sovereign identity paves the way for compliance-ready, decentralized data management, setting a new standard for Web3 applications */
+font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+color: rgba(214, 254, 82, 0.5);
+}

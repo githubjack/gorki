@@ -1,0 +1,110 @@
+
+
+/*
+Watch for scroll events
+*/
+
+.scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top:0;
+    z-index:100;
+    background-color: #1FAFD4;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-watcher {
+   to { scale: 1 1;} 
+}
+/*
+* fix to top using sticky
+*/
+
+.fixed {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding-block-start: 2rem;
+    background-color: #090a0b;
+    z-index: 20;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin-inline: auto;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    --_gap: 2rem;
+
+}
+
+.navbar li {
+    overflow: hidden;
+    position: relative;
+    padding-inline: calc(var(--_gap) / 2 );
+    padding-block-end: 0.25rem;
+}
+
+.navbar li::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #D6FE52;
+    background-color: #1FAFD4;
+    
+    translate: var(--_translate);
+    scale: var(--_width, 0) 1;
+    
+    transition: 
+      scale 300ms var(--_scale-delay, 0ms),
+      translate 500ms var(--_translate-delay, 0ms);
+}
+
+.navbar li:hover,
+.navbar li:focus-within {
+  --_width: 0.8;
+}
+
+@supports selector(has:(.navbar)){
+  
+    .navbar li:hover + li {
+    --_translate: -100%;
+    --_scale-delay: 300ms;
+    --_translate-delay: 200ms;
+    }
+    
+    .navbar li:has(+ :hover) {
+    --_translate: 100%;
+    --_scale-delay: 300ms;
+    --_translate-delay: 200ms;
+    }
+    
+  }
+
+.navbar a {
+    /* About Github Whitepaper */
+font-weight: 600;
+font-size: 18px;
+line-height: 50px;
+color: #1FAFD4;
+opacity: 0.7;
+position: relative;
+}
+.navbar a:hover,
+.navbar a:focus-visible{
+  opacity: 1;
+}

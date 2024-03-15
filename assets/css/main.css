@@ -1,0 +1,89 @@
+
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+body {
+    margin:0;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    background-image: url(../images/home-hero.png);
+    background-position: top left;
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* height: 928px; */
+}
+
+
+h2 {
+    /* Gorki Ecosystem awaits you */
+font-family: 'Inter';
+font-weight: 600;
+font-size: 48px;
+line-height: 48px;
+display: flex;
+align-items: center;
+color: #0073BA;
+}
+
+
+.app-home-container {
+    /* background-image: url(../images/home-hero.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* height: 100%; */
+    height: auto;
+}
+/* .hero-image {
+    /* background-image: url(../images/home-hero.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 928px; 
+} */
+.content-grid {
+    --padding-inline: 1rem;
+    --content-max-width: 980px;
+    --breakout-max-width: 1240px;
+  
+    --breakout-size: calc(
+      (var(--breakout-max-width) - var(--content-max-width)) / 2
+    );
+  
+    display: grid;
+    grid-template-columns:
+      [screen-width-start] minmax(var(--padding-inline), 1fr)
+      [breakout-start] minmax(0, var(--breakout-size))
+      [content-start] min(
+        100% - (var(--padding-inline) * 2),
+        var(--content-max-width)
+      )
+      [content-end]
+      minmax(0, var(--breakout-size)) [breakout-end]
+      minmax(var(--padding-inline), 1fr) [screen-width-end];
+  }
+  .content-grid > :not(.breakout, .screen-width),
+  .screen-width > :not(.breakout, .screen-width) {
+    grid-column: content;
+  }
+
+  .content-grid > .breakout {
+    grid-column: breakout;
+  }
+
+  .content-grid > .screen-width {
+    grid-column: full-width;
+  
+    display: grid;
+    grid-template-columns: inherit;
+  }
+
+.flow > * + * {
+        margin-block-start: var(--flow-spacing, 1em);
+      }
+.section-padding {
+padding-block: 2.5rem;
+ }
+      
+

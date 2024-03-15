@@ -4,9 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gorki</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/header/header.css" />
+    <link rel="stylesheet" href="./assets/css/sections/hero.css" />
+    <link rel="stylesheet" href="./assets/css/sections/card.css" />
+    <link rel="stylesheet" href="./assets/css/sections/discovery.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 <body>
+    <div class="app-home-container">
+       
+        <div class="hero-image"></div>
+        <div class="scroll-watcher"></div>
+        <!-- Grid based layout styles found in layout.css -->
+        <header class="fixed">
+            <!-- Flexbox layout for components see header.css -->
+            <nav class="navbar">
+                <a href="#"><img src="./assets/images/logo.png" alt="logo" /></a>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Whitepaper</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="flow content-grid">
+             <!-- Flexbox layout for components see components.css -->
+
+             <!-- hero section -->
+             <section class="hero section-padding" id="hero">
+                <h1 class="hero-title">
+                    <div class="impact">unleashing</div>
+                    the power of concurrency
+                    <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
+                        <img src="./assets/images/play-video.png" alt="play" />
+                    </a>
+                </h1>
+<!--                 <div class="play-video">
+                    <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
+                    <img src="./assets/images/play-video.png" alt="play" />
+                    </a>
+                </div> -->
+                <div class="hero-copy">
+                    <p>Linearly Scalable Concurrent Layer 1 Blockchain Platform</p>
+                    <button class="btn hero-cta">get white paper</button>
+                </div>
+             </section>
+
+             <!-- Card list section-->
+             <section class="card-list" id="card-list">
+                <div class="card">
+                    <div class="card-icon"></div>
+                    <h3 class="card-header">Leaderless consensus</h3>
+                    <p>A leaderless PoS consensus algorithm inspired by Casper CBC research for enhanced security and decentralization</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"></div>
+                    <h3 class="card-header">Novel programming language</h3>
+                    <p>Rholang, a concurrent programming anguage enables composable modules in concurrent settings, leveraging process calculus for efficient conflict resolution and dependency management</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"></div>
+                    <h3 class="card-header">Concurrency</h3>
+                    <p>An emphasis on data ownership and concurrent data access on the blockchain, made possible through the design of its smart-contracting language and the underlying technology stack</p>
+                </div>
+             </section>
+
+             <section class="discovery section-padding" id="discovery-1">
+                <div class="info-graphic">
+                    <img src="./assets/images/ecosystem-image.png" alt="ecosystem" />
+                </div>
+                <div class="info-text">
+                    <div class="first">
+                        <h2>Gorki Ecosystem awaits you</h2>
+                        <p>Discover how our platform transforms the landscape of 
+                            decentralized healthcare, introduces GorDrive for secure 
+                            on-chain file storage, and unleashes the potential of game 
+                            development with advanced engine SDKs. 
+                            At the heart of our ecosystem, atomic transactions redefine 
+                            data storage and content delivery, ensuring your digital sovereignty 
+                            and privacy are paramount. 
+                            Our commitment to data privacy and self-sovereign identity 
+                            paves the way for compliance-ready, decentralized 
+                            data management, setting a new standard 
+                            for Web3 applications</p>
+                    </div>
+                </div>
+
+
+
+             </section>
+
+             <section class="discovery section-padding" id="discovery-2">
+                <div class="info-text">
+                    <div class="last">
+                        <h2>Gorki Ecosystem awaits you</h2>
+                        <p>Discover how our platform transforms the landscape of 
+                            decentralized healthcare, introduces GorDrive for secure 
+                            on-chain file storage, and unleashes the potential of game 
+                            development with advanced engine SDKs. 
+                            At the heart of our ecosystem, atomic transactions redefine 
+                            data storage and content delivery, ensuring your digital sovereignty 
+                            and privacy are paramount. 
+                            Our commitment to data privacy and self-sovereign identity 
+                            paves the way for compliance-ready, decentralized 
+                            data management, setting a new standard 
+                            for Web3 applications</p>
+                    </div>
+                </div>
+                <div class="info-graphic">
+                    <img src="./assets/images/ecosystem-image.png" alt="ecosystem" />
+                </div>
+   
+
+
+
+             </section>
+
+
+        </main>
+        <footer>
+             <!-- Flexbox layout for components see footer.css -->
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
     <script src="./scripts/index.js"></script>
 </body>
 </html>
