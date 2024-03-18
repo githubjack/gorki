@@ -27,7 +27,11 @@
         font-size: 128px;
         line-height: 155px;
         text-transform: uppercase;
-        color: #E9F3F9;
+        /* color: #E9F3F9; */
+        background: linear-gradient(181deg, #03C8FB -1.7%, #2183DF 49.15%, #1D257B 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
         }
     .hero-title img {
             margin-inline-start:2rem;
@@ -47,6 +51,21 @@
 }
 
 .hero-button {
+    border: 8px solid #0073BA;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1FAFD4;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+    padding-block: 1rem;
+    padding-inline: 4rem;
+    
 background-color: #000;
 background-color: transparent;
 }

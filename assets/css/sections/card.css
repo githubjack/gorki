@@ -33,6 +33,7 @@
     border-radius: 8px; */
     background-color: transparent;
     border: 1px solid #010F40;
+    border: 1px solid #010f401f;
 
 }
 .card .card-icon {
@@ -56,7 +57,7 @@
 .card .card-header{
     /* Leaderless consensus */
 font-family: 'Inter';
-font-weight: 600;
+font-weight: 500;
 font-size: 20px;
 line-height: 31px;
 display: flex;

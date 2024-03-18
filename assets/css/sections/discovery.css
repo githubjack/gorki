@@ -31,10 +31,46 @@
     /* flex-wrap: wrap; */
 }
 .pdf-group .pdf {
+    position: relative;
     margin-block-end: 18px;
     margin-inline-end: 18px;
     width: 50%;
+    height: 276px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid #010F40; */
+    border: 1px solid #010f401f;
 }
+.pdf-group .pdf .healthcare,
+.pdf-group .pdf .esg, 
+.pdf-group .pdf .marketing,
+.pdf-group .pdf .gaming{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width:86px;
+    height:86px;
+}
+.pdf-group .pdf .healthcare{
+    background-image: url('../../images/pdf-healthcare.png');
+}
+.pdf-group .pdf .esg{
+    background-image: url('../../images/pdf-esg.png');
+}
+.pdf-group .pdf .marketing{
+    background-image: url('../../images/pdf-marketing.png');
+}
+.pdf-group .pdf .gaming{
+    background-image: url('../../images/pdf-gaming.png');
+}
+.pdf-group .pdf p {
+    padding-inline: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #010F40;
+}
+
 @media (prefers-reduced-motion: no-preference) {
 
     .info-graphic > img {

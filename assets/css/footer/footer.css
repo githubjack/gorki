@@ -78,11 +78,11 @@ footer{
         /* font-size: 20px; */
         font-size:0.9rem;
         line-height: 24px;
-        padding-inline-start: 0.5rem;
+        padding-inline-start: 0.4rem;
     }
     .urls li {
         letter-spacing: 0.04em;
-        padding-block-end: 1rem;
+        padding-block-end: 8px;
     }
     .urls a {
         color: #1FAFD4;
