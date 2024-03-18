@@ -1,3 +1,139 @@
 /*
 testimonies
 */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+.testimony {
+    width: 100%;
+    padding-inline: 5%;
+    padding-block:4rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: "Montserrat", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    color: #676767;
+    height: 100%;
+    touch-action: manipulation;
+    background-color: #1fafd4;
+    background: linear-gradient(301.51deg, #0073BA 8.61%, #1D257B 82.43%);
+    background-size: 100% 590px;
+}
+.carousel-slider * {
+    touch-action: manipulation;
+}
+
+.carousel-slider {
+    position: relative;
+    background: #fff;
+    background-color: #1fafd4;
+    background-color: transparent;
+    /* height: 590px; */
+
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #e2e2e2; */
+    padding: 0;
+    overflow: hidden;
+}
+
+.carousel-slider > .carousel-content {
+    position: relative;
+    -webkit-display: inline-flex;
+    -moz-display: inline-flex;
+    -ms-display: inline-flex;
+    -o-display: inline-flex;
+    display: inline-flex;
+    user-select: none;
+}
+
+.carousel-slider > .carousel-content > .slide-item {
+    background: white;
+    background: #1fafd4;
+    background: transparent;
+    height: 200px; 
+    padding-top: 100px;
+    padding-block-start: 30px;
+    /* text-align: center; */
+
+}
+.carousel-slider > .carousel-content > .slide-item q{
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+
+.carousel-slider .carousel-next-btn,
+.carousel-slider .carousel-prev-btn {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 14px 8px 14px;
+    outline: none;
+    border: none;
+    transition: all 0.25s ease-in-out;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    min-height: 40px;
+    min-width: 40px;
+}
+
+.carousel-slider .carousel-next-btn:hover,
+.carousel-slider .carousel-prev-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.carousel-slider .carousel-next-btn {
+    position: absolute;
+    right: 0;
+}
+
+.carousel-slider .carousel-prev-btn {
+    position: absolute;
+    left: 0;
+}
+
+.carousel-slider .carousel-pagination {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+}
+
+.carousel-slider .carousel-pagination.stick .item {
+    border-radius: 17px;
+    min-width: 30px;
+    min-height: 5px !important;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+
+.carousel-slider .carousel-pagination .item {
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.25s ease-in-out;
+    color: white;
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.carousel-slider .carousel-pagination .item:hover {
+    background-color: black;
+}
+
+.carousel-slider:hover .carousel-next-btn,
+.carousel-slider:hover .carousel-prev-btn,
+.carousel-slider:hover .carousel-pagination {
+    opacity: 1;
+}

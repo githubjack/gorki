@@ -1,0 +1,32 @@
+/* partners */
+
+.partners {
+    display: flex;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 980px) {
+    .partners {
+        max-width: 980px;
+        flex-direction: column;
+    }
+    .partners h2 {
+    padding-block-start: 4.5rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    letter-spacing: -0.03em;
+    color: #1FAFD4;
+    }
+
+    .partners .list {
+        display: flex;
+        width: 50%;
+        margin-inline: auto;
+        padding-block: 2rem;
+        justify-content: flex-start;
+    }
+}

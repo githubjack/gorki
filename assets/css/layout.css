@@ -1,0 +1,11 @@
+/* 
+Layouts 
+*/
+
+.core-info {
+    width: 1440px;
+    width: 100%;
+    /* height: 1447px; */
+    height:auto;
+    background: linear-gradient(301.51deg, #0073BA 8.61%, #1D257B 82.43%);
+}

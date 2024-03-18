@@ -5,7 +5,7 @@ Watch for scroll events
 */
 
 .scroll-watcher {
-    height: 10px;
+    height: 3px;
     position: fixed;
     top:0;
     z-index:100;
@@ -29,9 +29,15 @@ Watch for scroll events
     width: 100%;
     position: sticky;
     top: 0;
-    padding-block-start: 2rem;
-    background-color: #090a0b;
+    padding-block-start: 0.20rem;
+    background-color: #fff;
     z-index: 20;
+}
+@media screen and (min-width: 300px) {
+  .fixed{
+    width: 100vw;
+
+  }
 }
 .navbar {
     display: flex;
@@ -40,13 +46,40 @@ Watch for scroll events
     max-width: 980px;
     margin-inline: auto;
 }
+
+.navbar .logo img{
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 300px) {
+  .navbar .logo {
+    width: 96px;
+    height: 21px;
+    padding-left:0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .logo {
+    width: 214px;
+    height: 47px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .navbar .logo {
+    width: 210px;
+    height: 46px;
+  }
+}
+
 .navbar ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     --_gap: 2rem;
-
 }
 
 .navbar li {
@@ -63,7 +96,6 @@ Watch for scroll events
     bottom: 0;
     height: 3px;
     width: 100%;
-    background-color: #D6FE52;
     background-color: #1FAFD4;
     
     translate: var(--_translate);
@@ -100,7 +132,7 @@ Watch for scroll events
 font-weight: 600;
 font-size: 18px;
 line-height: 50px;
-color: #1FAFD4;
+color: rgba(0, 0, 0, 0.5);
 opacity: 0.7;
 position: relative;
 }
@@ -108,3 +140,54 @@ position: relative;
 .navbar a:focus-visible{
   opacity: 1;
 }
+
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .navbar ul {
+    padding-block: 0.8rem;
+
+  }
+  .navbar a {
+    display: none;
+  }
+
+  .fixed .hamburger{
+    /* hamburger */  
+  position: absolute; 
+  right:0.5rem;
+  top: 0.6rem;
+  width: 30.5px;
+  height: 14.29px;
+  background-image: url("../../images/hamburger.svg");
+  background-repeat: no-repeat;
+  } 
+}
+
+.fixed .hamburger-list {
+  position:absolute;
+  top:32px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.fixed .hamburger-list li {
+  padding-block: 1rem;
+  border-bottom: 1px solid #1FAFD4;
+}
+
+.fixed .hamburger-list li:last-child {
+  border-bottom: none;
+}
+@media screen and (min-width: 769px) {
+  .fixed .hamburger-list {
+    display: none;
+  }
+}
+
+/* media queries */
+

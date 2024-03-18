@@ -1,0 +1,79 @@
+.contact {
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-start; */
+    height: auto;
+
+}
+
+.contact .contact-info {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.contact-header {
+    font-family: 'Inter';
+    color: #1FAFD4;
+}
+.contact-header .contact{
+    font-family: 'Inter';
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.51);
+}
+
+@media screen and (min-width: 980px) {
+    .contact {
+        max-width: 980px;
+        margin-inline: auto;
+        padding-block-start: 6rem;
+        padding-block-end: 9rem;
+
+    }
+    .contact .contact-info {
+        width: 352px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-info p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.25);
+        margin-block: 4rem;
+    }
+    .contact-info a {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    .contact-header {
+        max-width: 9ch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: 96px;
+        letter-spacing: -0.04em;
+
+    }
+    .contact-header .first-word {
+        font-size: 72px;
+        line-height: 87px;
+        letter-spacing: 0.11em;
+        color:rgba(0, 0, 0, 0.51);
+        font-weight: 300;
+    }
+    .contact-map {
+        background-image: url(../../images/contact-map-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        background-size: contain;
+        flex: 1;
+    
+    }
+}

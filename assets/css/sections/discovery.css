@@ -4,8 +4,16 @@
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
+    margin-inline: auto;
+    max-width: 980px;
 }
 
+@media screen and (min-width: 980px) {
+    .discovery {
+        margin-inline: auto;
+        max-width: 980px;
+    }
+}
 
 .discovery .info-graphic {
     flex:1;
@@ -14,6 +22,18 @@
 .info-graphic img {
     width:100%;
     object-fit: cover;
+}
+
+.info-graphic .pdf-group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.pdf-group .pdf {
+    margin-block-end: 18px;
+    margin-inline-end: 18px;
+    width: 50%;
 }
 @media (prefers-reduced-motion: no-preference) {
 
@@ -29,6 +49,19 @@
         animation-range: entry;
     }
 
+    .info-graphic > .pdf-group {
+        scale: .8; 
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        /* animation-range-start: contain;
+        animation-range-end: contain; */
+        /* animation-range: contain;
+        animation-range: exit; */
+        animation-range: entry;
+    } 
+
+
     @keyframes fade-in {
         /* from { scale: .8; opacity: 0; } */
         to { scale: 1; opacity: 1;}
@@ -40,13 +73,18 @@
 .discovery .info-text {
     flex:1;
 }
-.info-text .first {
-    padding-inline-start: 102px;
+
+@media screen and (min-width: 980px) {
+    .info-text .first {
+        padding-inline-start: 4rem;
+    }
+    .info-text .last {
+        padding-inline-end: 4rem;
+    }
 }
 
-.info-text .last {
-    padding-inline-end: 102px;
-}
+
+
 .info-text h2 {
     margin-block-end:1rem;
 }
@@ -59,5 +97,6 @@ font-size: 16px;
 line-height: 19px;
 display: flex;
 align-items: center;
-color: rgba(214, 254, 82, 0.5);
+color: rgba(0, 0, 0, 0.5);
+margin-block: 2rem;
 }
