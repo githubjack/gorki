@@ -46,16 +46,19 @@ body {
     margin:0;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
-    background-color: #000;
-    background-color: #fff;
+    /* background-color: #000;
+    background-color: #fff; */
+    background-color: #F0F1F2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
-
 }
 
-
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 h2 {
     /* Gorki Ecosystem awaits you */
@@ -70,9 +73,10 @@ color: #0073BA;
 
 button {
 border: 8px solid #0073BA;
+border-radius: 4px;
 font-family: 'Inter';
 font-weight: 700;
-font-size: 0.9rem;
+font-size: 0.8rem;
 line-height: 24px;
 display: flex;
 align-items: center;
@@ -83,9 +87,10 @@ cursor: pointer;
 background: transparent;
 padding-block: 1rem;
 padding-inline: 4rem;
+text-transform: uppercase;
 }
 button:hover {
-  color:#fff;
+  color:#FFD700;
   background-color: #010F40;
 }
 

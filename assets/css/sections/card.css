@@ -1,22 +1,57 @@
 
+.card-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card-title .feature{
+    color: #0073BA;
+    display: block;
+    text-align: center;
+}
+.card-title .feature .contrast {
+    color: rgb(0,0,0,.25);
+    font-weight:300;
+}
 
 .card-list {
     width:100%;
     height: auto;
-    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
 }
+.card .card-header{
+    /* Leaderless consensus */
+font-family: 'Inter';
+font-weight: 500;
+font-size: 20px;
+line-height: 31px;
+display: flex;
+text-align: center;
+color: #0073BA;
+}
+
+
 
 @media screen and (min-width: 980px){
+
+    .card-title{
+        max-width: 980px;
+        margin-inline: auto;
+        padding-block: 7rem;
+}
+    
     .card-list {
-        padding-block-start: 12rem;
+        /* padding-block-start: 12rem; */
         padding-block-end: 15rem;
         max-width: 980px;
         margin-inline: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
     }
-}
+
 
 .card {
     display: flex;
@@ -46,11 +81,89 @@
     object-fit: contain;
 }
 
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    .card-title .feature {
+        max-width: 690px;
+        margin-inline: auto;
+        font-size: 2.2rem;
+        padding-block: 4.5rem;
+    }
+    .card-list {
+    margin-inline: auto;
+    max-width: 979px;
+    min-width: 768px;
+    display: block;
+    }
+    .card-list .card {
+        padding-block: 1.5rem;
+        border-bottom: 1px solid #1D257B;
+    }
+    .card-list .card > .card-icon{
+        display: block;text-align: center;
+    }
+
+    .card-list .card > .card-header{
+        /* Leaderless consensus */
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        }
+
+    .card-list .card p {
+        margin-inline: auto;
+        width: 80%;
+        text-align: center;
+        /* A leaderless PoS consensus algorithm inspired by Casper CBC research for enhanced security and decentralization */
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 17px;
+        color: #010F40;
+
+
+    }
+}
 @media screen and (min-width: 300px) and (max-width: 768px){
 
+.card-title .feature {
+    /* Linearly Scalable Concurrent Layer 1 Blockchain Platform */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-inline: auto;
+    padding-block: 2rem;
+    width: 20ch;
+
+}
+.card-list {
+    display: block;
+    /* padding-block: 4.5rem; */
+}
+.card-list .card {
+    text-align: center;
+    /* width: 50%; */
+    margin-inline: auto;
+    padding-block-end: 1rem;
+    border-bottom: 1px solid #010F40;
+}
+.card-list .card:last-child {
+    border-bottom: none;
+}
 .card .card-icon {
     width: 45.61px;
     height: 48.63px;
+    margin-inline: auto;
+    margin-block-start: 1rem;
     }
 }
 
@@ -61,6 +174,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 31px;
 display: flex;
+flex-direction: column;
 text-align: center;
 color: #0073BA;
 }

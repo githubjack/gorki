@@ -1,6 +1,25 @@
 console.log('javascript file found');
 
+// nav
+function toggleMenu() {
+    const toggleButton = document.getElementById("toggleButton");
+    const hamburgerList = document.getElementById("hamburger-list");
 
+    if (toggleButton.textContent === "open") {
+        // Show the menu
+        hamburgerList.style.display = "block";
+        
+        // Change button text and class
+        toggleButton.textContent = "close";
+      }
+      else {
+        // Hide the menu
+        hamburgerList.style.display = "none";
+        
+        // Change button text and class
+        toggleButton.textContent = "open";
+      }
+}
 // testimonies js
 
 let carousel = (el, parameter) => {

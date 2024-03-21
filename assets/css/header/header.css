@@ -54,23 +54,23 @@ Watch for scroll events
 
 @media screen and (min-width: 300px) {
   .navbar .logo {
-    width: 96px;
-    height: 21px;
+    width: 109px;
+    height: 29px;
     padding-left:0.5rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .navbar .logo {
-    width: 214px;
-    height: 47px;
+    width: 109px;
+    height: 25px;
   }
 }
 
 @media screen and (min-width: 980px) {
   .navbar .logo {
-    width: 210px;
-    height: 46px;
+    width: 139px;
+    height: 32px;
   }
 }
 
@@ -154,13 +154,18 @@ position: relative;
   .fixed .hamburger{
     /* hamburger */  
   position: absolute; 
-  right:0.5rem;
+  right: 1.5rem;
   top: 0.6rem;
   width: 30.5px;
   height: 14.29px;
-  background-image: url("../../images/hamburger.svg");
-  background-repeat: no-repeat;
+  /* background-image: url("../../images/hamburger.svg");
+  background-repeat: no-repeat; */
   } 
+  .hamburger button {
+    border:none;
+    padding: 0;
+    background: transparent;
+  }
 }
 
 .fixed .hamburger-list {
@@ -174,7 +179,10 @@ position: relative;
   text-align: center;
   font-size: 3rem;
 }
-
+.fixed .hamburger button {
+  background-color: transparent;
+  margin-inline-end: 1rem;;
+}
 .fixed .hamburger-list li {
   padding-block: 1rem;
   border-bottom: 1px solid #1FAFD4;
@@ -183,11 +191,29 @@ position: relative;
 .fixed .hamburger-list li:last-child {
   border-bottom: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width:979px) {
+  .hamburger {
+    display: none;
+  }
+  .hamburger button {
+    display: none;
+    visibility: hidden;
+  }
   .fixed .hamburger-list {
     display: none;
   }
 }
-
+@media screen and (min-width: 980px) {
+  .hamburger {
+    display: none;
+  }
+  .hamburger button {
+    display: none;
+    visibility: hidden;
+  }
+  .fixed .hamburger-list {
+    display: none;
+  }
+}
 /* media queries */
 

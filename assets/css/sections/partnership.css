@@ -2,13 +2,13 @@
 
 .partners {
     display: flex;
-    margin-inline: auto;
+    /* margin-inline: auto; */
 }
 
 @media screen and (min-width: 980px) {
     .partners {
-        max-width: 980px;
         flex-direction: column;
+        padding-inline: 9%;
     }
     .partners h2 {
     padding-block-start: 4.5rem;
@@ -24,9 +24,47 @@
 
     .partners .list {
         display: flex;
-        width: 50%;
+        /* width: 50%; */
+        flex: 0.7;
         margin-inline: auto;
         padding-block: 2rem;
         justify-content: flex-start;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width:979px){
+    .partners {
+        margin-inline: auto;
+        max-width: 979px;
+        min-width: 768px;
+        padding-block: 5.5rem;
+        display: block;
+    }
+
+    .partners h2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+
+
+    }
+    .partners .list {
+        margin-inline: auto;
+        width: 512px;
+        padding-block: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .partners{
+        flex-direction: column;
+    }
+    .partners h2{
+        padding-block: 2.5rem;
+    }
+    .partners .list {
+        padding-block-end: 2rem;
+    }
+    
 }

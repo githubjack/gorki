@@ -40,8 +40,10 @@
                 </ul>
 
             </nav>
-            <div class="hamburger"></div>
-            <div class="hamburger-list" style="display: none">
+            <div class="hamburger">
+                <button id="toggleButton" onclick="toggleMenu()">open</button>
+            </div>
+            <div class="hamburger-list" id="hamburger-list">
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Github</a></li>
@@ -60,21 +62,25 @@
                 <section class="hero" id="hero">
                     <h1 class="hero-title">
                         <div class="impact">unleashing</div>
-                        the power of concurrency
-                        <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
-                            <img src="./assets/images/play-video.png" alt="play" />
-                        </a>
+                        <span>
+                            power of concurrency
+                            <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
+                                <img src="./assets/images/play-video.png" alt="play" />
+                            </a>
+                        </span>
+
                     </h1>
-                    <div class="hero-copy">
-                        <p>Linearly Scalable Concurrent Layer 1 Blockchain Platform</p>
+                    <div class="hero-cta">
                         <button class="hero-button">get white paper</button>
                     </div>
                 </section>
             </div>
             <!-- end core-info -->
                 <!-- Card list section-->
-          
-                   <section class="card-list" id="card-list">
+                <div class="card-title">
+                    <h2 class="feature"><span class="contrast">Linearly </span>Scalable <span class="contrast">Concurrent Layer 1</span> Blockchain Platform</h2>
+                </div>
+                   <section class="card-list" id="card-list">      
                        <div class="card">
                            <div class="card-icon">
                                <img src="./assets/images/consensus-group.png" alt="" />
@@ -103,41 +109,45 @@
 
      
                 <section class="discovery" id="discovery-1">
-                   <div class="info-graphic">
-                       <!-- <img src="./assets/images/ecosystem-image.png" alt="ecosystem" /> -->
-                       <div class="pdf-group">
-                           <div class="pdf">
-                               <a href="./assets/docs/gorki___healthcare_whitepaper.pdf" target="_blank">
-                                   <!-- <img src="./assets/images/healthcare.png" alt="" /> -->
-                                   <p>Communication in a decentralised healthcare setting</p>
-                               </a>
-                               <div class="healthcare"></div>
-                           </div>
-                           <div class="pdf">
-                               <a href="./assets/docs/gorki___Blockchain_as_a_Keystone_for_ESG.pdf" target="_blank">
-                                   <!-- <img src="./assets/images/esg.png" alt="" /> -->
-                                   <p>Data Management and asset tokenisation</p>
-                               </a>
-                               <div class="esg"></div>
-                           </div>
-                       </div>
-                       <div class="pdf-group">
-                           <div class="pdf">
-                               <a href="./assets/docs/gorki___decentralised_content_delivery_and_marketing.pdf" target="_blank">
-                                   <!-- <img src="./assets/images/marketing.png" alt="" /> -->
-                                   <p>Content distribution storie</p>
-                               </a>
-                               <div class="marketing"></div>
-                           </div>
-                           <div class="pdf">
-                               <a href="./assets/docs/gorki___Redefining_the_Game.pdf" target="_blank">
-                                   <!-- <img src="./assets/images/gaming.png" alt="" /> -->
-                                   <p>Blockchain and cloud gaming hybrid</p>
-                               </a>
-                               <div class="gaming"></div>
-                           </div>
-                       </div>
-                   </div>
+                    <div class="info-graphic">
+                        <!-- <img src="./assets/images/ecosystem-image.png" alt="ecosystem" /> -->
+                        <div class="pdf-group">
+                            <div class="pdf">
+                             <div class="get-pdf">Get PDF</div>
+                                <a href="./assets/docs/gorki___healthcare_whitepaper.pdf" target="_blank">
+                                    <!-- <img src="./assets/images/healthcare.png" alt="" /> -->
+                                    <p>Communication in a decentralised healthcare setting</p>
+                                </a>
+                                <div class="healthcare"></div>
+                            </div>
+                            <div class="pdf">
+                             <div class="get-pdf">Get PDF</div>
+                                <a href="./assets/docs/gorki___Blockchain_as_a_Keystone_for_ESG.pdf" target="_blank">
+                                    <!-- <img src="./assets/images/esg.png" alt="" /> -->
+                                    <p>Data Management and asset tokenisation</p>
+                                </a>
+                                <div class="esg"></div>
+                            </div>
+                        </div>
+                        <div class="pdf-group">
+                            <div class="pdf">
+                             <div class="get-pdf">Get PDF</div>
+                                <a href="./assets/docs/gorki___decentralised_content_delivery_and_marketing.pdf" target="_blank">
+                                    <!-- <img src="./assets/images/marketing.png" alt="" /> -->
+                                    <p>Content distribution storie</p>
+                                </a>
+                                <div class="marketing"></div>
+                            </div>
+                            <div class="pdf">
+                             <div class="get-pdf">Get PDF</div>
+                                <a href="./assets/docs/gorki___Redefining_the_Game.pdf" target="_blank">
+                                    <!-- <img src="./assets/images/gaming.png" alt="" /> -->
+                                    <p>Blockchain and cloud gaming hybrid</p>
+                                </a>
+                                <div class="gaming"></div>
+                            </div>
+                        </div>
+                    </div>
                    <div class="info-text">
                        <div class="first">
                            <h2>Gorki Ecosystem awaits you</h2>
@@ -155,33 +165,29 @@
                                <button>discover</button>
                        </div>
                    </div>
-   
-   
-   
+
                 </section>
    
                 <section class="discovery" id="discovery-2">
                    <div class="info-text">
                        <div class="last">
-                           <h2>Gorki Ecosystem awaits you</h2>
-                           <p>Discover how our platform transforms the landscape of 
-                               decentralized healthcare, introduces GorDrive for secure 
-                               on-chain file storage, and unleashes the potential of game 
-                               development with advanced engine SDKs. 
-                               At the heart of our ecosystem, atomic transactions redefine 
-                               data storage and content delivery, ensuring your digital sovereignty 
-                               and privacy are paramount. 
-                               Our commitment to data privacy and self-sovereign identity 
-                               paves the way for compliance-ready, decentralized 
-                               data management, setting a new standard 
-                               for Web3 applications</p>
+                           <h2>Discover Our Tokenomics</h2>
+                           <p>Dive into our innovative token system designed for seamless transaction 
+                            execution and robust network security, powered by validator rewards. 
+                            With 10 billion tokens minted initially, our ecosystem is 
+                            engineered for sustainability, featuring low inflation rates 
+                            and a dynamic reward mechanism tailored by user engagement 
+                            and network activity. 
+                            Experience the future of blockchain economy, where your participation 
+                            directly influences growth and stability</p>
                                <button>discover</button>
                        </div>
                    </div>
                    <div class="info-graphic">
-                       <img src="./assets/images/tokenomics.png" alt="" />
-                   </div>
+                    <img src="./assets/images/tokenomics.png" alt="" />
+                </div>
                 </section>
+
                 <section class="testimony">
                     <div class="carousel-slider" id="responsive">
                         <div class="carousel-content" data-grid='{"xl":3,"lg":2,"md":1,"sm":1}' data-pagination="true">
@@ -227,6 +233,7 @@
                         <div class="carousel-pagination"></div>
                     </div>
                 </section>
+
                 <section class="partners">
                     <h2>Partners</h2>
                     <div class="list">
@@ -234,22 +241,20 @@
                         <img src="./assets/images/angle-42.png" alt="" />
                     </div>
                 </section>
+
                 <section class="contact">
                     <!-- use image as css bg image-->
                     <div class="contact-info">
+                        <!-- <div class="contact-map"></div> -->
                         <h2 class="contact-header">
                             <span class="first-word">contact</span>Gorki
                         </h2>
                         <p>Rhocal Ventures FZCO, Dubai Silicon Oasis</p>
                         <a href="mailto: contact@gorki.dev">contact@gorki.dev</a>
                     </div>
-                    <div class="contact-map"></div>
-
-                    
                 </section>
-           </main>
-      
 
+           </main>
         <footer>
              <!-- Flexbox layout for components see footer.css -->
 
@@ -276,8 +281,9 @@
             </div>
             <div class="brand">
                 <img src="./assets/images/logo-desktop-footer.png" width="400" height="115" alt="" />
+                <p>Gorki Network. A network that scales</p> 
             </div>
-                
+ 
            </section>
         </footer>
 

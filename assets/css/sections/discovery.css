@@ -7,18 +7,25 @@
     margin-inline: auto;
     max-width: 980px;
 }
-
-@media screen and (min-width: 980px) {
-    .discovery {
-        margin-inline: auto;
-        max-width: 980px;
-    }
-}
-
 .discovery .info-graphic {
     flex:1;
 }
+.info-text h2 {
+    margin-block-end:1rem;
+    color: #0073BA;
+}
 
+.info-text p {
+    /* Discover how our platform transforms the landscape of decentralized healthcare, introduces GorDrive for secure on-chain file storage, and unleashes the potential of game development with advanced engine SDKs. At the heart of our ecosystem, atomic transactions redefine data storage and content delivery, ensuring your digital sovereignty and privacy are paramount. Our commitment to data privacy and self-sovereign identity paves the way for compliance-ready, decentralized data management, setting a new standard for Web3 applications */
+font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+color: rgba(0, 0, 0, 0.5);
+margin-block: 2rem;
+}
 .info-graphic img {
     width:100%;
     object-fit: cover;
@@ -32,25 +39,18 @@
 }
 .pdf-group .pdf {
     position: relative;
-    margin-block-end: 18px;
-    margin-inline-end: 18px;
-    width: 50%;
-    height: 276px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     /* border: 1px solid #010F40; */
+    background-color: rgba(255, 215, 0, 0.06);
     border: 1px solid #010f401f;
+}
+.pdf-group .pdf .get-pdf{
+    position: absolute;
 }
 .pdf-group .pdf .healthcare,
 .pdf-group .pdf .esg, 
 .pdf-group .pdf .marketing,
 .pdf-group .pdf .gaming{
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width:86px;
-    height:86px;
 }
 .pdf-group .pdf .healthcare{
     background-image: url('../../images/pdf-healthcare.png');
@@ -78,10 +78,6 @@
         opacity: 0;
         animation: fade-in linear forwards;
         animation-timeline: view();
-        /* animation-range-start: contain;
-        animation-range-end: contain; */
-        /* animation-range: contain;
-        animation-range: exit; */
         animation-range: entry;
     }
 
@@ -90,10 +86,6 @@
         opacity: 0;
         animation: fade-in linear forwards;
         animation-timeline: view();
-        /* animation-range-start: contain;
-        animation-range-end: contain; */
-        /* animation-range: contain;
-        animation-range: exit; */
         animation-range: entry;
     } 
 
@@ -104,12 +96,151 @@
     }
 
 }
-
-
 .discovery .info-text {
     flex:1;
 }
 
+
+@media screen and (min-width: 300px) {
+    .discovery {
+        /* display: block; */
+        flex-direction: column;
+        height: auto;
+    }
+    .discovery .info-graphic,
+    .discovery .info-text {
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+    }
+    .info-text h2 {
+        /* Gorki Ecosystem awaits you */
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .info-text p {
+       /* Discover how our platform transforms the landscape of decentralized healthcare, introduces GorDrive for secure on-chain file storage, and unleashes the potential of game development with advanced engine SDKs. At the heart of our ecosystem, atomic transactions redefine data storage and content delivery, ensuring your digital sovereignty and privacy are paramount. Our commitment to data privacy and self-sovereign identity paves the way for compliance-ready, decentralized data management, setting a new standard for Web3 applications */
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        padding-inline: 12px;
+    }
+    .info-text button {
+        margin-inline: auto;
+        margin-block: 1rem;
+    }
+    .info-graphic .pdf-group {
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pdf-group .pdf {
+        width: 100%;
+        width: 100%;
+        height: 250px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block-end: 1rem;
+    }
+    .pdf-group .pdf .healthcare,
+    .pdf-group .pdf .esg, 
+    .pdf-group .pdf .marketing,
+    .pdf-group .pdf .gaming{
+        top: 10px;
+        left: 10px;
+        width:86px;
+        height:86px;
+}
+    .pdf-group .pdf .get-pdf{
+        bottom: 10px;
+        right: 10px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    .discovery {
+        margin-inline: auto;
+        max-width: 980px;
+        /* display: block; */
+        padding-block: 4.5rem;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  
+    .discovery .info-graphic,
+    .discovery .info-text {
+        display: block;
+    }
+    .discovery .info-text h2 {
+        margin-inline: auto;
+        /* width: 65%; */
+        width:20ch;
+        text-align: center;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        /* identical to box height */
+        color: #0073BA;
+    }
+    .discovery .info-text p {
+        padding-inline: 2rem;
+    }
+    .discovery .info-text button {
+        margin-inline: auto
+    }
+    .info-graphic .pdf-group {
+        display: block;
+    }
+    .info-graphic .pdf-group .pdf{
+        width: 100%;
+    }
+    .pdf-group .pdf .get-pdf{
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .pdf-group .pdf{
+        justify-content: flex-start;
+    }
+    .pdf-group .pdf .healthcare,
+    .pdf-group .pdf .esg, 
+    .pdf-group .pdf .marketing,
+    .pdf-group .pdf .gaming{
+        top: 10px;
+        left: 10px;
+        width:86px;
+        height:86px;
+}
+}
+
+@media screen and (min-width: 980px) {
+    .discovery {
+        margin-inline: auto;
+        max-width: 980px;
+        flex-direction: row;
+    }
+}
 @media screen and (min-width: 980px) {
     .info-text .first {
         padding-inline-start: 4rem;
@@ -117,22 +248,40 @@
     .info-text .last {
         padding-inline-end: 4rem;
     }
+    .info-graphic .pdf-group {
+        flex-direction: row;
+    }
+    .pdf-group .pdf{
+        margin-block-end: 18px;
+        margin-inline-end: 18px;
+        width: 50%;
+        height: 276px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .pdf-group .pdf .healthcare,
+    .pdf-group .pdf .esg, 
+    .pdf-group .pdf .marketing,
+    .pdf-group .pdf .gaming{
+        bottom: 10px;
+        right: 10px;
+        width:86px;
+        height:86px;
+}
+    .pdf-group .pdf .get-pdf{
+        top: 1rem;
+        left: 1rem;
+        font-size: 10px;
+        font-weight: 700;
+    }
 }
 
 
 
-.info-text h2 {
-    margin-block-end:1rem;
-}
 
-.info-text p {
-    /* Discover how our platform transforms the landscape of decentralized healthcare, introduces GorDrive for secure on-chain file storage, and unleashes the potential of game development with advanced engine SDKs. At the heart of our ecosystem, atomic transactions redefine data storage and content delivery, ensuring your digital sovereignty and privacy are paramount. Our commitment to data privacy and self-sovereign identity paves the way for compliance-ready, decentralized data management, setting a new standard for Web3 applications */
-font-family: 'Inter';
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-display: flex;
-align-items: center;
-color: rgba(0, 0, 0, 0.5);
-margin-block: 2rem;
-}
+
+
+
+
+
