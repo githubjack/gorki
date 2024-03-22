@@ -240,6 +240,11 @@ margin-block: 2rem;
         max-width: 980px;
         flex-direction: row;
     }
+    .discovery .info-graphic {
+        background-image: url('../../images/info-graphic-canvas.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 10px;    }
 }
 @media screen and (min-width: 980px) {
     .info-text .first {
@@ -247,6 +252,14 @@ margin-block: 2rem;
     }
     .info-text .last {
         padding-inline-end: 4rem;
+    }
+    .info-text h2 {
+        justify-content: flex-start!important;
+    }
+    .info-text p {
+        text-align: left!important;
+        align-items: flex-start!important;
+        padding-inline: 0!important;
     }
     .info-graphic .pdf-group {
         flex-direction: row;
@@ -260,6 +273,9 @@ margin-block: 2rem;
         align-items: center;
         justify-content: flex-end;
     }
+    .pdf-group .pdf p{
+        color: #FFD700;
+    }
     .pdf-group .pdf .healthcare,
     .pdf-group .pdf .esg, 
     .pdf-group .pdf .marketing,
@@ -270,10 +286,14 @@ margin-block: 2rem;
         height:86px;
 }
     .pdf-group .pdf .get-pdf{
-        top: 1rem;
-        left: 1rem;
+        bottom: 1rem;
+        right: 1rem;
         font-size: 10px;
         font-weight: 700;
+        color: #FFD700;
+        background-color: black;
+        padding: 5px;
+        border-radius: 2px;
     }
 }
 
