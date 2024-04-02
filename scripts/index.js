@@ -20,6 +20,23 @@ function toggleMenu() {
         toggleButton.textContent = "open";
       }
 }
+
+
+// pdf opener
+
+function openInNewTab(url) {
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+
+const pdfH = document.querySelector('#pdfH');
+// pdfH.addEventListener('click', function(){
+//     console.log("button was click");
+
+    // pdfH.addEventListener('click', function(event)  {
+    //     openInNewTab('http://localhost:5500/gorki/assets/docs/gorki__healthcare_whitepaper.pdf');
+    //  });
+
 // testimonies js
 
 let carousel = (el, parameter) => {

@@ -21,17 +21,12 @@
     />
 </head>
 <body>
-    
-       
-        <!-- <div class="hero-image"></div> -->
         <div class="scroll-watcher"></div>
-        <!-- Grid based layout styles found in layout.css -->
+
         <header class="fixed">
-            <!-- Flexbox layout for components see header.css -->
-            <nav class="navbar">
-                <!-- <a href="#"><img src="./assets/images/logo.png" alt="logo" /></a> -->
+            <nav class="navbar inline-spacing-xl">
                 <div class="logo">
-                    <img src="./assets/images/logo-desktop.svg" alt="" />
+                    <img src="./assets/images/desktop-logo.png" wsidth="146" height="50"/>
                 </div>
                 <ul>
                     <li><a href="#">About</a></li>
@@ -54,140 +49,118 @@
         
      
             <main>
-                <!-- Flexbox layout for components see components.css -->
-   
-                <div class="core-info">
-                <!-- core-info  Container place the gradient on this -->
-                <!-- hero section -->
-                <section class="hero" id="hero">
+            <div class="hero-container">
+                <section class="hero inline-spacing-xl">
+                  <div class="text-info">
                     <h1 class="hero-title">
-                        <div class="impact">unleashing</div>
-                        <span>
-                            power of concurrency
+                        <span class="gradient-alpha display-9">unleashing</span>
+                        <span class="gradient-beta sub-heading">the power of concurrency</span>
+                        <span class="video-button-ctrl">
                             <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
-                                <img src="./assets/images/play-video.png" alt="play" />
+                                <img src="./assets/images/play-video.png" alt="play video" />
                             </a>
                         </span>
-
                     </h1>
-                    <div class="hero-cta">
-                        <button class="hero-button">get white paper</button>
+                  </div>
+                  <div class="code-info">
+                    <div class="code-container">
+                      <div class="code">
+                        <img src="./assets/images/code.svg" alt="" />
+                      </div>
                     </div>
+                  </div>
                 </section>
-            </div>
-            <!-- end core-info -->
-                <!-- Card list section-->
-                <div class="card-title">
-                    <h2 class="feature"><span class="contrast">Linearly </span>Scalable <span class="contrast">Concurrent Layer 1</span> Blockchain Platform</h2>
-                </div>
-                   <section class="card-list" id="card-list">      
-                       <div class="card">
-                           <div class="card-icon">
-                               <img src="./assets/images/consensus-group.png" alt="" />
-                           </div>
-                           <h3 class="card-header">Leaderless consensus</h3>
-                           <p>A leaderless PoS consensus algorithm inspired by Casper CBC research for enhanced security and decentralization</p>
-                       </div>
-       
-                       <div class="card">
-                           <div class="card-icon">
-                               <img src="./assets/images/novel-programming-group.png" alt="" />
-                           </div>
-                           <h3 class="card-header">Novel programming language</h3>
-                           <p>Rholang, a concurrent programming anguage enables composable modules in concurrent settings, leveraging process calculus for efficient conflict resolution and dependency management</p>
-                       </div>
-       
-                       <div class="card">
-                           <div class="card-icon">
-                               <img src="./assets/images/concurrency-group.png" alt="" />
-                           </div>
-                           <h3 class="card-header">Concurrency</h3>
-                           <p>An emphasis on data ownership and concurrent data access on the blockchain, made possible through the design of its smart-contracting language and the underlying technology stack</p>
-                       </div>
-                    </section>
+                <section class="cta inline-spacing-xl">
+                    <button id="cta-button" onclick="window.open('./assets/docs/gorki___whitepaper.pdf', '_blank');" class="cta-button" data="get white paper"></button>
+                </section>
+              </div>
+                    <section class="card-list-container">
+                        <h2 class="text-transform-card-list">Linearly Scalable Concurrent Layer 1 Blockchain Platform</h2>
+                        <div class="card-list">
+                          <div class="card">
+                            <h3 class="card-header">Leaderless consensus</h3>
+                            <div class="card-body">
+                              <p class="card-text">A leaderless PoS consensus algorithm inspired by Casper CBC research for enhanced security 
+                      and decentralization</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <h3 class="card-header">Novel programming language</h3>
+                            <div class="card-body">
+                              <p class="card-text">Rholang, a concurrent programming language enables composible modules in concurrent settings, 
+                      leveraging process calculus for efficient conflict resolution and dependency management</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <h3 class="card-header">Concurrency</h3>
+                            <div class="card-body">
+                              <p class="card-text">An emphasis on data ownership and concurrent data access on the blockchain, made possible through the design of its smart-contracting 
+                      language and the underlying technology stack</p>
+                            </div>
+                          </div>
+                        </div> 
+                      </section>
 
 
-     
-                <section class="discovery" id="discovery-1">
-                    <div class="info-graphic">
-                        <!-- <img src="./assets/images/ecosystem-image.png" alt="ecosystem" /> -->
-                        <div class="pdf-group">
-                            <div class="pdf">
-                             <div class="get-pdf">Get PDF</div>
-                                <a href="./assets/docs/gorki___healthcare_whitepaper.pdf" target="_blank">
-                                    <!-- <img src="./assets/images/healthcare.png" alt="" /> -->
-                                    <p>Communication in a decentralised healthcare setting</p>
-                                </a>
-                                <div class="healthcare"></div>
-                            </div>
-                            <div class="pdf">
-                             <div class="get-pdf">Get PDF</div>
-                                <a href="./assets/docs/gorki___Blockchain_as_a_Keystone_for_ESG.pdf" target="_blank">
-                                    <!-- <img src="./assets/images/esg.png" alt="" /> -->
-                                    <p>Data Management and asset tokenisation</p>
-                                </a>
-                                <div class="esg"></div>
-                            </div>
+               <div class="eco-container">
+                <section class="ecosystem">
+                    <div class="eco-items contrast-header block-spacing-xl inline-spacing-xl">
+                    <h2 class="text-transform-discovery limit-chars">Gorki ecosystem awaits you</h2>
+                    <div class="eco-list">
+                      <div class="button-group">
+                        <div class="button-container">
+                            <button id="pdfH" onclick="window.open('./assets/docs/gorki___healthcare_whitepaper.pdf', '_blank');" class="button-item" data="Communication in a decentralised healthcare setting"></button>
                         </div>
-                        <div class="pdf-group">
-                            <div class="pdf">
-                             <div class="get-pdf">Get PDF</div>
-                                <a href="./assets/docs/gorki___decentralised_content_delivery_and_marketing.pdf" target="_blank">
-                                    <!-- <img src="./assets/images/marketing.png" alt="" /> -->
-                                    <p>Content distribution storie</p>
-                                </a>
-                                <div class="marketing"></div>
-                            </div>
-                            <div class="pdf">
-                             <div class="get-pdf">Get PDF</div>
-                                <a href="./assets/docs/gorki___Redefining_the_Game.pdf" target="_blank">
-                                    <!-- <img src="./assets/images/gaming.png" alt="" /> -->
-                                    <p>Blockchain and cloud gaming hybrid</p>
-                                </a>
-                                <div class="gaming"></div>
-                            </div>
+                        <div class="button-container">
+                          <button id="pdfD" onclick="window.open('./assets/docs/gorki___Blockchain_as_a_Keystone_for_ESG.pdf', '_blank');" class="button-item" data="Data Management and asset tokenisation"></button>
+                        </div>
+
+                        <div class="button-container">
+                          <button id="pdfB" onclick="window.open('./assets/docs/gorki___decentralised_content_delivery_and_marketing.pdf', '_blank');" class="button-item" data="Business Content distribution stories"></button>
+                        </div>
+
+                        <div class="button-container">
+                          <button id="pdfG" onclick="window.open('./assets/docs/gorki___Redefining_the_Game.pdf', '_blank');" class="button-item" data="Blockchain and cloud gaming hybrid"></button>
                         </div>
                     </div>
-                   <div class="info-text">
-                       <div class="first">
-                           <h2>Gorki Ecosystem awaits you</h2>
-                           <p>Discover how our platform transforms the landscape of 
-                               decentralized healthcare, introduces GorDrive for secure 
-                               on-chain file storage, and unleashes the potential of game 
-                               development with advanced engine SDKs. 
-                               At the heart of our ecosystem, atomic transactions redefine 
-                               data storage and content delivery, ensuring your digital sovereignty 
-                               and privacy are paramount. 
-                               Our commitment to data privacy and self-sovereign identity 
-                               paves the way for compliance-ready, decentralized 
-                               data management, setting a new standard 
-                               for Web3 applications</p>
-                               <button>discover</button>
-                       </div>
+                    </div>
                    </div>
+                  </section>
 
-                </section>
-   
-                <section class="discovery" id="discovery-2">
-                   <div class="info-text">
-                       <div class="last">
-                           <h2>Discover Our Tokenomics</h2>
-                           <p>Dive into our innovative token system designed for seamless transaction 
-                            execution and robust network security, powered by validator rewards. 
-                            With 10 billion tokens minted initially, our ecosystem is 
-                            engineered for sustainability, featuring low inflation rates 
-                            and a dynamic reward mechanism tailored by user engagement 
-                            and network activity. 
-                            Experience the future of blockchain economy, where your participation 
-                            directly influences growth and stability</p>
-                               <button>discover</button>
-                       </div>
-                   </div>
-                   <div class="info-graphic">
-                    <img src="./assets/images/tokenomics.png" alt="" />
-                </div>
-                </section>
-
+                  <section class="eco-content">
+                    <div class="body inline-spacing-xl">
+                      <p class="body-copy">Discover how our platform transforms the landscape of 
+                  decentralized healthcare, introduces GorDrive for secure 
+                  on-chain file storage, and unleashes the potential of game 
+                  development with advanced engine SDKs.</p>
+                      <p class="body-copy">At the heart of our ecosystem, atomic transactions redefine 
+                  data storage and content delivery, ensuring your digital sovereignty 
+                  and privacy are paramount.</p>
+                      <p class="body-copy">Our commitment to data privacy and self-sovereign identity 
+                  paves the way for compliance-ready, decentralized 
+                  data management, setting a new standard 
+                  for Web3 applications.</p>
+                      <button class="wp-button" data="discover ecosystem"></button>
+                    </div>
+                    <div class="title-section contrast-header block-spacing-md inline-spacing-xl justify-end">
+                      <h2 class="text-transform-discovery">
+                        Discover Our Tokenomics
+                      </h2>
+                    </div>
+                    <div class="body inline-spacing-xl">
+                      <p class="body-copy push-down">Dive into our innovative token system designed for seamless transaction 
+                  execution and robust network security, powered by validator
+                   rewards. With 10 billion tokens minted initially, our ecosystem is 
+                  engineered for sustainability, featuring low inflation rates 
+                  and a dynamic reward mechanism tailored by user engagement 
+                  and network activity.</p>
+                      <p class="body-copy">Experience the future of blockchain economy, where your participation 
+                  directly influences growth and stability.</p>
+                      <button class="wp-button" data="discover tokenomics"></button>
+                    </div>
+                  </section>
+               </div>
+               
                 <section class="testimony">
                     <div class="carousel-slider" id="responsive">
                         <div class="carousel-content" data-grid='{"xl":3,"lg":2,"md":1,"sm":1}' data-pagination="true">
@@ -235,17 +208,18 @@
                 </section>
 
                 <section class="partners">
-                    <h2>Partners</h2>
-                    <div class="list">
+                    <div class="partners-title contrast-header">
+                        <h2 class="inline-spacing-xl">Partnerships</h2>
+                    </div>
+
+                    <div class="partners-list inline-spacing-xl">
                         <img src="./assets/images/nvidia.png" alt="" />
                         <img src="./assets/images/angle-42.png" alt="" />
                     </div>
                 </section>
 
-                <section class="contact">
-                    <!-- use image as css bg image-->
+                <section class="contact block-spacing-md inline-spacing-xl">
                     <div class="contact-info">
-                        <!-- <div class="contact-map"></div> -->
                         <h2 class="contact-header">
                             <span class="first-word">contact</span>Gorki
                         </h2>
@@ -253,11 +227,8 @@
                         <a href="mailto: contact@gorki.dev">contact@gorki.dev</a>
                     </div>
                 </section>
-
            </main>
         <footer>
-             <!-- Flexbox layout for components see footer.css -->
-
            <section class="footnotes" id="footnotes">
             <!-- <div>a</div><div>b</div><div>c</div> -->
             <div class="subscribe">
@@ -267,7 +238,6 @@
                     <div class="input-button">
                         <input type="button" value="subscribe" />
                     </div>
-
                 </div>
             </div>
             <div class="urls">
@@ -280,7 +250,7 @@
                 </ul>
             </div>
             <div class="brand">
-                <img src="./assets/images/logo-desktop-footer.png" width="400" height="115" alt="" />
+                <img src="./assets/images/footer-logo.png" width="166" height="71" alt="" />
                 <p>Gorki Network. A network that scales</p> 
             </div>
  
@@ -294,6 +264,5 @@
         });    
       </script>
     <script src="./scripts/index.js"></script>
-
 </body>
 </html>

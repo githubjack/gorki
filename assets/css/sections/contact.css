@@ -1,36 +1,24 @@
 .contact {
     display: flex;
-    /* flex-direction: column;
-    align-items: flex-start; */
-    height: auto;
+    background-color: #0e0e0e;
 
 }
 
 .contact .contact-info {
     height: auto;
     display: flex;
-    /* align-items: center; */
 }
-
 
 .contact-header {
     font-family: 'Inter';
-    color: #1FAFD4;
-}
-.contact-header .contact{
-    font-family: 'Inter';
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.51);
+    color: #0073BA;
 }
 
 @media screen and (min-width: 980px) {
     .contact {
-    padding-block-start: 6rem;
-    padding-block-end: 9rem;
-    padding-inline: 7%;
     background-image: url(../../images/contact-map-desktop.png);
     background-repeat: no-repeat;
-    background-position: 100% 40%;
+    background-position: 70% 40%;
     background-size: 533px 267px;
 }
 
@@ -42,12 +30,11 @@
     }
     .contact-info p {
         font-family: 'Inter';
-        font-style: normal;
         font-weight: 400;
-        font-size: 32px;
-        line-height: 39px;
+        font-size: 24px;
+        line-height: 28px;
         letter-spacing: 0.04em;
-        color: rgba(0, 0, 0, 0.25);
+        color: rgb(255 253 253 / 50%);
         margin-block: 4rem;
         width: 16ch;
         display: flex;
@@ -55,6 +42,7 @@
     .contact-info a {
         font-weight: 700;
         text-decoration: underline;
+        color: rgb(255 253 253 / 100%);
     }
     .contact-header {
         max-width: 9ch;
@@ -68,98 +56,14 @@
 
     }
     .contact-header .first-word {
-        font-size: 72px;
-        line-height: 87px;
-        letter-spacing: 0.11em;
-        color:rgba(0, 0, 0, 0.51);
-        font-weight: 300;
-    }
-
-}
-@media  screen and (min-width:768px) and (max-width: 979px) {
-    .contact {
-        padding-inline: 9%;
-        padding-block: 1rem 4.5rem;
-        flex-direction: column;
-    }
-    .contact .contact-info {
-        flex-direction: column;
-        align-items: flex-start;
-        background-image: url(../../images/contact-map-tablet.png);
-        background-repeat: no-repeat;
-        background-position: 100% 50%;
-    }
-
-    .contact-info p {
-        /* Rhocal Ventures FZCO, Dubai Silicon Oasis */
-        padding-block: 2.5rem;
-        font-weight: 500;
+        font-family: 'Inter';
+        font-weight: 600;
         font-size: 24px;
-        width: 18ch;
-        line-height: 29px;
-        letter-spacing: 0.04em;
-        color: rgba(0, 0, 0, 0.5);
-
+        line-height: 28px;
+        letter-spacing: 0.11em;
+        color: rgba(255, 255, 255, 0.5);
+        padding-inline: 1rem;
+        padding-block: 1rem;
     }
 
-    .contact-info a {
-        /* background */
-        font-weight: 700;
-        color: #000;
-
-    }
-    .contact-header{
-        width: 7ch;
-        display: flex;
-        flex-wrap: wrap;
-        /* Gorki */
-
-        font-weight: 900;
-        font-size: 64px;
-        /* line-height: 77px; */
-        letter-spacing: 0.04em;
-
-        color: #1FAFD4;
-
-    }
-    .contact-header .first-word {
-        /* Contact */
-        font-weight: 300;
-        font-size: 32px;
-        line-height: 39px;
-        /* identical to box height */
-        letter-spacing: 0.32em;
-        color: rgba(0, 0, 0, 0.51);
-    }
-   
-}
-@media screen and (min-width: 300px) {
-    .contact {
-        padding-block: 5rem;
-        /* background-image: url('../../images/contact-map-mobile.png');
-        background-size: cover; */
-    }
-    .contact .contact-info {
-        flex-direction: column;
-    }
-    .contact-info .contact-header {
-        width: 7ch;
-        flex-direction: column;
-        align-items: self-start;
-        line-height: 1
-    }
-    .contact-header .first-word {
-        font-weight: 300;
-        font-size: 16px;
-        letter-spacing: 0.65em;
-        color: rgba(0, 0, 0, 0.51);
-        padding-inline-start: 4px;
-    }
-    .contact-info p {
-        width: 20ch;
-        padding-block: 2rem;
-    }
-    .contact-info a {
-        font-weight: 700;
-    }
 }

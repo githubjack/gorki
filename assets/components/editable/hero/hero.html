@@ -3,20 +3,28 @@
     code for php implementation as an include
 -->
 
-<div class="core-info">
-    <!-- core-info  Container place the gradient on this -->
-    <!-- hero section -->
-    <section class="hero" id="hero">
+<div class="hero-container">
+    <section class="hero inline-spacing-xl">
+      <div class="text-info">
         <h1 class="hero-title">
-            <div class="impact">unleashing</div>
-            the power of concurrency
-            <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
-                <img src="./assets/images/play-video.png" alt="play" />
-            </a>
+            <span class="gradient-alpha display-9">unleashing</span>
+            <span class="gradient-beta sub-heading">the power of concurrency</span>
+            <span class="video-button-ctrl">
+                <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
+                    <img src="./assets/images/play-video.png" alt="play video" />
+                </a>
+            </span>
         </h1>
-        <div class="hero-copy">
-            <p>Linearly Scalable Concurrent Layer 1 Blockchain Platform</p>
-            <button class="hero-button">get white paper</button>
+      </div>
+      <div class="code-info">
+        <div class="code-container">
+          <div class="code">
+            <img src="./assets/images/code.svg" alt="" />
+          </div>
         </div>
+      </div>
     </section>
-</div>
+    <section class="cta inline-spacing-xl">
+        <button id="cta-button" onclick="window.open('./assets/docs/gorki___whitepaper.pdf', '_blank');" class="cta-button" data="get white paper"></button>
+    </section>
+  </div>

@@ -15,8 +15,9 @@ testimonies
     color: #676767;
     height: 100%;
     touch-action: manipulation;
-    background-color: #1fafd4;
-    background: linear-gradient(301.51deg, #0073BA 8.61%, #1D257B 82.43%);
+    /* background-color: #1fafd4;
+    background: linear-gradient(301.51deg, #0073BA 8.61%, #1D257B 82.43%); */
+    background-color: #ffffff;
     background-size: 100% 590px;
 }
 .carousel-slider * {

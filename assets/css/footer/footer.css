@@ -1,7 +1,6 @@
 footer{
     display: flex;
-    /* background-color: #000; */
-    background-color: #010F40;
+    background-color: #1D257B;
     flex-direction: column;
 }
 
@@ -12,9 +11,6 @@ footer{
 
 .footnotes .subscribe p {
     font-family: 'Inter';
-    font-style: normal;
-    color: #FFFFFF;
- 
 }
 
 .urls {
@@ -30,7 +26,6 @@ footer{
         margin-inline: auto;
         padding-block-start: 3rem;
         padding-block-end: 4.5rem;
-        color: #1FAFD4;
         flex-direction:row-reverse;
     }
 
@@ -38,30 +33,31 @@ footer{
         width: 418px;
         height: 24px;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .footnotes .subscribe p {
-        font-weight: 500;
-        font-size:0.9rem;
+        font-weight: 600;
+        font-size: .8rem;
         line-height: 24px;
         letter-spacing: 0.04em;
-        margin-block-end: 2rem;
+        margin-block-end: .5rem;
+        color: #0073BA;
     }
     .subscribe .subscribe-form {
-        border: 9px solid #0073BA;
+        border: 3px solid #0073BA;
         width: 423px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        color: #0073BA;
     }
 
     .subscribe-form .input-button {
         height: 66px;
         display: flex;
         padding-inline: 2rem;
-        /* background: #1A1A1A; */
-        /* background-color: #fff; */
         background-color: #ffd700;
         color: #938f8f;
     }
@@ -85,136 +81,14 @@ footer{
         padding-block-end: 8px;
     }
     .urls a {
-        color: #1FAFD4;
+        color: #0073ba;
+        font-size: .8rem;
 
     }
-}
-
-@media screen and (min-width: 768px) and (max-width: 979px){
-    footer .footnotes {
-        display: block;
+    .brand p {
+        color: #0073ba;
+        font-size: .8rem;
+        font-weight: 600;
+        padding-inline-start: 1rem;
     }
-    .footnotes .subscribe {
-        width: 423px;
-        flex-direction: column;
-        margin-inline: auto;
-        padding-block: 4.5rem;
-    }
-    .footnotes .subscribe p {
-        margin-block-end: 1.5rem;
-    }
-    .subscribe .subscribe-form {
-        border: 4px solid #0073BA;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .subscribe-form .input-button {
-        height: 66px;
-        display: flex;
-        padding-inline: 2rem;
-        background-color: #ffd700;
-        color: #938f8f;
-    }
-    .subscribe-form input[type=button] {
-        cursor: pointer;
-     }
-     .subscribe-form input[type=email] {
-         padding-inline-start: 1rem;
-         color: #1FAFD4;
-     }
-
-     .footnotes .urls {
-        padding-inline-start: 7%;
-     }
-     .urls ul {
-        width: 100%;
-     }
-     .urls li {
-        border-bottom: 1px solid #1FAFD4;
-        margin-block-end: 0.5rem;
-        align-items: center;
-        display: flex;
-     }
-     .urls a{
-        padding-block: 5px;
-        color: #1FAFD4;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.04em;
-     }
-     .brand{
-        display: flex;
-        flex-direction: column;
-        padding-block: 4.5rem;
-        padding-inline: 7%;
-     }
-     .brand img {
-        padding-block-end: 1.5rem;
-     }
-     .brand p {
-        color: #1FAFD4; 
-     }
-}
-
-@media screen and (min-width: 300px) {
-    .footnotes {
-        display: flex;
-        flex-direction: column;
-    }
-    .footnotes .subscribe {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-block: 2rem 1rem;
-    }
-    .subscribe .subscribe-form {
-        border: 4px solid #0073BA;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        margin-top: 2rem;
-    }
-    .subscribe-form .input-button {
-        height: 66px;
-        display: flex;
-        padding-inline: 2rem;
-        background-color: #ffd700;
-        color: #938f8f;
-    }
-    .subscribe-form input[type=button] {
-        cursor: pointer;
-     }
-     .subscribe-form input[type=email] {
-         padding-inline-start: 1rem;
-         color: #1FAFD4;
-     }
-    .urls ul {
-        padding-inline-start: 5%;
-        margin-block: 1rem;
-        width: 100%;
-     }
-     .urls li {
-     
-        border-bottom: 1px solid #1FAFD4;
-        margin-block-end: 0.5rem;
-        align-items: center;
-        display: flex;
-     }
-     .urls a{
-        padding-block: 5px;
-        color: #1FAFD4;
-        /* font-size: 20px;
-        line-height: 24px; */
-        letter-spacing: 0.04em;
-     }
-     .brand {
-        margin-bottom: 2rem;
-        padding-block-start: 2rem;
-     }
-     .brand p {
-        color:#1FAFD4;
-     }
 }

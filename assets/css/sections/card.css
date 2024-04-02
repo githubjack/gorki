@@ -1,194 +1,132 @@
 
-.card-title {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.card-title .feature{
-    color: #0073BA;
-    display: block;
-    text-align: center;
-}
-.card-title .feature .contrast {
-    color: rgb(0,0,0,.25);
-    font-weight:300;
-}
 
-.card-list {
-    width:100%;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    /* align-items: center; */
-}
-.card .card-header{
-    /* Leaderless consensus */
-font-family: 'Inter';
-font-weight: 500;
-font-size: 20px;
-line-height: 31px;
-display: flex;
-text-align: center;
+h2 {
 color: #0073BA;
 }
-
-
-
-@media screen and (min-width: 980px){
-
-    .card-title{
-        max-width: 980px;
-        margin-inline: auto;
-        padding-block: 7rem;
+h3{
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  color: #010F40;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
-    
-    .card-list {
-        /* padding-block-start: 12rem; */
-        padding-block-end: 15rem;
-        max-width: 980px;
-        margin-inline: auto;
-        height: 100vh;
-        display: flex;
-        justify-content: space-evenly;
-    }
 
 
-.card {
+
+.card-list-container {
     display: flex;
     flex-direction: column;
+    background-color: #1D257B;
+}
+.text-transform-card-list {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
     align-items: center;
-    width:300px;
-    height: 300px;
-    margin-inline: 12px;
-    padding-block-start: 2rem;
-    /* justify-content: center; */
-
-    /* background: #1FAFD4; */
-    /* box-shadow: 0px 4px 7px 7px rgba(0, 0, 0, 0.25);
-    border-radius: 8px; */
-    background-color: transparent;
-    /* border: 1px solid #010F40; */
-    border: 1px solid #010f401f;
-
+    text-transform: uppercase;
+    color: #0073BA;
+    padding-block-start: 155px;
+    width: 28ch;
+    letter-spacing: 3px;
+    margin-inline-start: 9.5rem;
 }
-.card .card-icon {
-    width: 61.61px;
-    height: 71.44px;
+.card-list {
+  display: flex;
+}
+.card {
+  position: relative;
+  display: flex;
+}
+.card-body {
+  background: #FFFFFF;
+  display: flex;
+  position: absolute;
 }
 
-.card .card-icon > img {
+
+
+@media screen and (min-width: 280px){
+  .card-list {
+    flex-direction: column;
+  }
+      
+
+  .card {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    object-fit: contain;
-}
-
-}
-@media screen and (min-width: 768px) and (max-width: 979px) {
-    .card-title .feature {
-        max-width: 690px;
-        margin-inline: auto;
-        font-size: 2.2rem;
-        padding-block: 4.5rem;
-    }
-    .card-list {
-    margin-inline: auto;
-    max-width: 979px;
-    min-width: 768px;
-    display: block;
-    }
-    .card-list .card {
-        padding-block: 1.5rem;
-        border-bottom: 1px solid #1D257B;
-    }
-    .card-list .card > .card-icon{
-        display: block;text-align: center;
-    }
-
-    .card-list .card > .card-header{
-        /* Leaderless consensus */
-        display: block;
-        text-align: center;
-        font-size: 1.4rem;
-        font-weight: 600;
-        }
-
-    .card-list .card p {
-        margin-inline: auto;
-        width: 80%;
-        text-align: center;
-        /* A leaderless PoS consensus algorithm inspired by Casper CBC research for enhanced security and decentralization */
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 17px;
-        color: #010F40;
-
-
-    }
-}
-@media screen and (min-width: 300px) and (max-width: 768px){
-
-.card-title .feature {
-    /* Linearly Scalable Concurrent Layer 1 Blockchain Platform */
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
+    padding-block-start: 2rem;
+    background: linear-gradient(135.25deg, rgba(24, 45, 129, 0.5) 4.73%, #1FAFD4 59.16%);
+  }
+  h3 {
+    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    color: #FFFFFF;
+  }
+  .card-body {
+    width: 100%;
+    height: 134px;
+    left: 0;
+    top: 144px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .card-list {
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    padding-inline: 4.5rem;
+    margin-block: 100px 204px
+  }
+
+
+  .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
+    width: 268px;
+    height: 362px;
+    padding-block-start: 4.5rem;
+    padding-inline: 1.8rem 0;
+    background: linear-gradient(140.92deg, rgba(26, 42, 127, 0.5) 23.84%, #AACB5B 66.69%);
+    border-radius: 8px 8px 0 0;
 
-    margin-inline: auto;
-    padding-block: 2rem;
-    width: 20ch;
+  }
 
-}
-.card-list {
-    display: block;
-    /* padding-block: 4.5rem; */
-}
-.card-list .card {
-    text-align: center;
-    /* width: 50%; */
-    margin-inline: auto;
-    padding-block-end: 1rem;
-    border-bottom: 1px solid #010F40;
-}
-.card-list .card:last-child {
-    border-bottom: none;
-}
-.card .card-icon {
-    width: 45.61px;
-    height: 48.63px;
-    margin-inline: auto;
-    margin-block-start: 1rem;
-    }
-}
+  .card-header {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    width: 16ch;
+    text-transform: capitalize;
+  }
+  .card-body {
+    width: 100%;
+    height: 193px;
+    left: 0;
+    top: 175px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 8px 8px;
+  }
 
-.card .card-header{
-    /* Leaderless consensus */
-font-family: 'Inter';
-font-weight: 500;
-font-size: 20px;
-line-height: 31px;
-display: flex;
-flex-direction: column;
-text-align: center;
-color: #0073BA;
+ .card-body .card-text {
+    padding-block:2.5rem;
+    padding-inline:1.8rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(1, 15, 64, 0.5);
+  }
 }
 
-.card p {
-    /* A leaderless PoS consensus algorithm inspired by Casper CBC research for enhanced security and decentralization */
-padding-inline: 2rem;
-padding-block-start: 0.5rem;
-font-family: 'Inter';
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #010F40;
+
+@media screen and (min-width: 980px) {
+  
 }

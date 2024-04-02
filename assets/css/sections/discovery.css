@@ -1,301 +1,330 @@
 
-.discovery {
+
+
+ h2, ul {
+   font-family: 'Inter';
+   }
+   .text-transform-discovery {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #0073BA;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
+   }
+
+
+/*
+Utilities
+*/
+
+.block-spacing-xl {
+  padding-block: 8rem;
+}
+
+.block-spacing-md {
+  padding-block: 4rem;
+}
+.inline-spacing-xl {
+  padding-inline: 8rem;
+}
+ .title-section {
+   display: flex;
+   position: relative;
+ }
+
+ .title-section::before {
+  content: '';
+  width: 296px;
+  height: 297px;
+  background: transparent;
+  background-image: url(../../images/gorki-token.png);
+  position: absolute;
+  left: 8rem;
+  top: -68px;
+ }
+ .contrast-header {
+  background-color: #0e0e0e;
+ }
+ .justify-end {
+  justify-content: flex-end;
+ }
+ .justify-center {
     margin-inline: auto;
-    max-width: 980px;
-}
-.discovery .info-graphic {
-    flex:1;
-}
-.info-text h2 {
-    margin-block-end:1rem;
-    color: #0073BA;
+ }
+ .limit-chars {
+  width: 10ch;
 }
 
-.info-text p {
-    /* Discover how our platform transforms the landscape of decentralized healthcare, introduces GorDrive for secure on-chain file storage, and unleashes the potential of game development with advanced engine SDKs. At the heart of our ecosystem, atomic transactions redefine data storage and content delivery, ensuring your digital sovereignty and privacy are paramount. Our commitment to data privacy and self-sovereign identity paves the way for compliance-ready, decentralized data management, setting a new standard for Web3 applications */
-font-family: 'Inter';
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-display: flex;
-align-items: center;
-color: rgba(0, 0, 0, 0.5);
-margin-block: 2rem;
-}
-.info-graphic img {
-    width:100%;
-    object-fit: cover;
-}
+ .eco-container {
+    background-color: #1D257B;
+ }
+ .ecosystem {
+   display: flex;
+ }
+ .ecosystem .eco-items {
+   display: flex;
+ }
+ 
+ .ecosystem .eco-list { 
+   display: flex;
+ }
+ .eco-list ul {
+   display: flex;
+ }
+ .eco-list h4 {
+   text-align: center;
+   text-transform: uppercase;
+   color: #010F40; 
+ }
+ 
+ .eco-content {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .eco-content .body {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+ }
+ 
+ .body .body-copy {
+ color: rgba(0, 0, 0, 0.5);
+ color: #ffffff;
+ font-family: 'Inter';
+ }
+ .body .wp-button {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 32ch;
+     padding: 1.1rem 1.5rem;
+     text-transform: uppercase;
+     font-family: 'Inter';
+     font-weight: 600;
+     font-size: 10px;
+     line-height: 17px;
+     border: none;
+     outline: none;
+     position: relative;
+     border-radius: 4px;
+     background: linear-gradient(to right, #0073BA, #2FFF0D);
+     cursor: pointer;
+     z-index: 1;
+ }
+ .body .wp-button::before {
+   content: "";
+   position: absolute;
+   top: 1px;
+   right: 1px;
+   bottom: 1px;
+   left: 1px;
+   background-color: #B0C0A4;
+   background-color: #1D257B;
+   border-radius: 3px;
+   z-index: -1;
+   transition: 200ms;
+ }
+ .body .wp-button:hover::before {
+   opacity: 50%;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+ }
+ .body .wp-button:hover::after{
+   color: #ffffff;
+ }
+ .body .wp-button::after {
+   content: attr(data);
+   font-size: 10px;
+   font-weight: 700;
+   background: linear-gradient(to right, #2FFF0D, #0073BA);
+    -webkit-background-clip: text;
+   color: transparent;
+   transition: 200ms;
+ }
 
-.info-graphic .pdf-group {
-    width: 100%;
-    height: auto;
-    display: flex;
-    /* flex-wrap: wrap; */
-}
-.pdf-group .pdf {
+ @media screen and (min-width: 280px) {
+   .ecosystem {
+     flex-direction: column;
+   }
+   .eco-items {
+     flex-direction: column;
+   }
+   .eco-list { 
+     flex-direction: column;
+   }
+   .eco-list ul {
+     flex: 1;
+     flex-direction: column;
+   }
+     .eco-list li {
+     display: flex;
+     flex-direction: column;
+   }
+ }
+ 
+ @media screen and (min-width: 980px){
+   .ecosystem {
+    flex-direction: row;
     position: relative;
-    /* border: 1px solid #010F40; */
-    background-color: rgba(255, 215, 0, 0.06);
-    border: 1px solid #010f401f;
-}
-.pdf-group .pdf .get-pdf{
+   }
+
+   .ecosystem::before {
+    content: '';
+    width: 246px;
+    height: 250px;
     position: absolute;
-}
-.pdf-group .pdf .healthcare,
-.pdf-group .pdf .esg, 
-.pdf-group .pdf .marketing,
-.pdf-group .pdf .gaming{
-    position: absolute;
-}
-.pdf-group .pdf .healthcare{
-    background-image: url('../../images/pdf-healthcare.png');
-}
-.pdf-group .pdf .esg{
-    background-image: url('../../images/pdf-esg.png');
-}
-.pdf-group .pdf .marketing{
-    background-image: url('../../images/pdf-marketing.png');
-}
-.pdf-group .pdf .gaming{
-    background-image: url('../../images/pdf-gaming.png');
-}
-.pdf-group .pdf p {
-    padding-inline: 1rem;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #010F40;
-}
+    background-color: transparent;
+    background-image: url(../../images/ecosystem.png);
+    bottom: -10.5rem;
+    right: 8rem;
+   }
+   
+   .eco-items {
+     flex-direction: row;
+     flex: 1;
+     justify-content: space-between;
+     align-items: flex-end;
+     align-items: center;
+   }
+   
+   .eco-list {
+     flex-direction: row;
+   }
+   .eco-list ul {
+     flex: 1;
+     flex-wrap:wrap;
+   }
 
-@media (prefers-reduced-motion: no-preference) {
-
-    .info-graphic > img {
-        scale: .8; 
-        opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range: entry;
-    }
-
-    .info-graphic > .pdf-group {
-        scale: .8; 
-        opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range: entry;
-    } 
-
-
-    @keyframes fade-in {
-        /* from { scale: .8; opacity: 0; } */
-        to { scale: 1; opacity: 1;}
-    }
-
-}
-.discovery .info-text {
-    flex:1;
+   .eco-list .button-group {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
 }
 
+   .eco-list li {
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+     align-items: center;
+     justify-content: center;
+     margin-inline: 1rem
+   }
 
-@media screen and (min-width: 300px) {
-    .discovery {
-        /* display: block; */
-        flex-direction: column;
-        height: auto;
-    }
-    .discovery .info-graphic,
-    .discovery .info-text {
-        /* display: block; */
-        display: flex;
-        flex-direction: column;
-    }
-    .info-text h2 {
-        /* Gorki Ecosystem awaits you */
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 34px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-
-    }
-    .info-text p {
-       /* Discover how our platform transforms the landscape of decentralized healthcare, introduces GorDrive for secure on-chain file storage, and unleashes the potential of game development with advanced engine SDKs. At the heart of our ecosystem, atomic transactions redefine data storage and content delivery, ensuring your digital sovereignty and privacy are paramount. Our commitment to data privacy and self-sovereign identity paves the way for compliance-ready, decentralized data management, setting a new standard for Web3 applications */
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-        padding-inline: 12px;
-    }
-    .info-text button {
-        margin-inline: auto;
-        margin-block: 1rem;
-    }
-    .info-graphic .pdf-group {
-        /* display: block; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .pdf-group .pdf {
-        width: 100%;
-        width: 100%;
-        height: 250px;
     
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-block-end: 1rem;
-    }
-    .pdf-group .pdf .healthcare,
-    .pdf-group .pdf .esg, 
-    .pdf-group .pdf .marketing,
-    .pdf-group .pdf .gaming{
-        top: 10px;
-        left: 10px;
-        width:86px;
-        height:86px;
-}
-    .pdf-group .pdf .get-pdf{
-        bottom: 10px;
-        right: 10px;
-        font-size: 10px;
-        font-weight: 700;
-    }
-}
+  .eco-list .button-container {
+    display: flex;
+    margin-inline: 4px;
+    width: 168px;
+    height: 44px;
+    height: 52px;
+    align-items: flex-start;
+  }
+   
 
+  .eco-list .button-container .button-item {
+    padding-block: 8px;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-inline: 16px;
+    height: 52px;
+  }
 
-
-
-
-
-
-@media screen and (min-width: 768px) and (max-width: 979px) {
-    .discovery {
-        margin-inline: auto;
-        max-width: 980px;
-        /* display: block; */
-        padding-block: 4.5rem;
-        height: auto;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-  
-    .discovery .info-graphic,
-    .discovery .info-text {
-        display: block;
-    }
-    .discovery .info-text h2 {
-        margin-inline: auto;
-        /* width: 65%; */
-        width:20ch;
-        text-align: center;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 58px;
-        /* identical to box height */
-        color: #0073BA;
-    }
-    .discovery .info-text p {
-        padding-inline: 2rem;
-    }
-    .discovery .info-text button {
-        margin-inline: auto
-    }
-    .info-graphic .pdf-group {
-        display: block;
-    }
-    .info-graphic .pdf-group .pdf{
-        width: 100%;
-    }
-    .pdf-group .pdf .get-pdf{
-        bottom: 1rem;
-        right: 1rem;
-        font-size: 10px;
-        font-weight: 700;
-    }
-    .pdf-group .pdf{
-        justify-content: flex-start;
-    }
-    .pdf-group .pdf .healthcare,
-    .pdf-group .pdf .esg, 
-    .pdf-group .pdf .marketing,
-    .pdf-group .pdf .gaming{
-        top: 10px;
-        left: 10px;
-        width:86px;
-        height:86px;
-}
+  .button-item {
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 4px;
+    background: linear-gradient(to right, #0073BA, #A4BC78, #FFE454);
+    cursor: pointer;
+    z-index: 1;
 }
 
-@media screen and (min-width: 980px) {
-    .discovery {
-        margin-inline: auto;
-        max-width: 980px;
-        flex-direction: row;
-    }
-    .discovery .info-graphic {
-        background-image: url('../../images/info-graphic-canvas.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 10px;    }
+.button-item::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background-color: #0e0e0e;
+  border-radius: 3px;
+  z-index: -1;
+  transition: 200ms;
 }
-@media screen and (min-width: 980px) {
-    .info-text .first {
-        padding-inline-start: 4rem;
-    }
-    .info-text .last {
-        padding-inline-end: 4rem;
-    }
-    .info-text h2 {
-        justify-content: flex-start!important;
-    }
-    .info-text p {
-        text-align: left!important;
-        align-items: flex-start!important;
-        padding-inline: 0!important;
-    }
-    .info-graphic .pdf-group {
-        flex-direction: row;
-    }
-    .pdf-group .pdf{
-        margin-block-end: 18px;
-        margin-inline-end: 18px;
-        width: 50%;
-        height: 276px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    .pdf-group .pdf p{
-        color: #FFD700;
-    }
-    .pdf-group .pdf .healthcare,
-    .pdf-group .pdf .esg, 
-    .pdf-group .pdf .marketing,
-    .pdf-group .pdf .gaming{
-        bottom: 10px;
-        right: 10px;
-        width:86px;
-        height:86px;
+
+.button-item:hover::before {
+  opacity: 50%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
-    .pdf-group .pdf .get-pdf{
-        bottom: 1rem;
-        right: 1rem;
-        font-size: 10px;
-        font-weight: 700;
-        color: #FFD700;
-        background-color: black;
-        padding: 5px;
-        border-radius: 2px;
-    }
+
+.button-item:hover::after{
+  color: #ffffff;
 }
+.button-item::after {
+  content: attr(data);
+  font-size: 8px;
+  font-weight: 700;
+  background: linear-gradient(to right, #FFE454, #A4BC78, #0073BA);
+   -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+   .eco-content {
+     padding-block: 96px 120px;
+   }
+   .eco-content .body {
+    padding-block-end: 6.5rem;
+   }
+   .eco-content .body .body-copy {
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 24px;
+     margin-block-end: 2.5rem;
+     width: 60ch;
+     padding-inline: 0 1rem;
+ }
+   
+   .eco-content .body .push-down {
+     padding-block-start: 96px;
+   }
+   .eco-content .contrast-header{
+    width: 100%;
+   }
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

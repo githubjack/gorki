@@ -1,7 +1,4 @@
 
-/* @import url('https://fonts.cdnfonts.com/css/inter'); */
-
-
 @font-face {
   font-family: 'Inter-Bold';
   font-style: normal;
@@ -46,8 +43,6 @@ body {
     margin:0;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
-    /* background-color: #000;
-    background-color: #fff; */
     background-color: #F0F1F2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -61,37 +56,7 @@ main {
 }
 
 h2 {
-    /* Gorki Ecosystem awaits you */
 font-family: 'Inter';
-font-weight: 600;
-font-size: 48px;
-line-height: 48px;
-display: flex;
-align-items: center;
-color: #0073BA;
-}
-
-button {
-border: 8px solid #0073BA;
-border-radius: 4px;
-font-family: 'Inter';
-font-weight: 700;
-font-size: 0.8rem;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #1FAFD4;
-justify-content: center;
-cursor: pointer;
-background: transparent;
-padding-block: 1rem;
-padding-inline: 4rem;
-text-transform: uppercase;
-}
-button:hover {
-  color:#FFD700;
-  background-color: #010F40;
 }
 
 .app-home-container {
@@ -119,52 +84,4 @@ button:hover {
  
   }
 }
-
-/* .content-grid {
-    --padding-inline: 1rem;
-    --content-max-width: 980px;
-    --breakout-max-width: 1240px;
-  
-    --breakout-size: calc(
-      (var(--breakout-max-width) - var(--content-max-width)) / 2
-    );
-  
-    display: grid;
-    grid-template-columns:
-      [screen-width-start] minmax(var(--padding-inline), 1fr)
-      [breakout-start] minmax(0, var(--breakout-size))
-      [content-start] min(
-        100% - (var(--padding-inline) * 2),
-        var(--content-max-width)
-      )
-      [content-end]
-      minmax(0, var(--breakout-size)) [breakout-end]
-      minmax(var(--padding-inline), 1fr) [screen-width-end];
-  }
-  .content-grid > :not(.breakout, .screen-width),
-  .screen-width > :not(.breakout, .screen-width) {
-    grid-column: content;
-  }
-
-  .content-grid > .breakout {
-    grid-column: breakout;
-  }
-
-  .content-grid > .screen-width {
-    grid-column: screen-width;
-  
-    display: grid;
-    grid-template-columns: inherit;
-  }
-
-.flow > * + * {
-        margin-block-start: var(--flow-spacing, 1em);
-      }
-.section-padding {
-padding-block: 2.5rem;
- }
-       */
- /* .card-list-color {
-  background: rgba(1, 15, 64, 0.8);
- } */
 

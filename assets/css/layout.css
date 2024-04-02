@@ -3,9 +3,16 @@ Layouts
 */
 
 .core-info {
-    width: 1440px;
-    width: 100%;
-    /* height: 1447px; */
+    width: 100%; 
+
     height:auto;
-    background: linear-gradient(301.51deg, #0073BA 8.61%, #1D257B 82.43%);
+    background-image: linear-gradient(297.42deg, #D6FE52 -3.32%, #7D9566 34.69%, #1D257B 67.36%);
+    background-size: cover;
+}
+
+.hero-container {
+    width: 100%;
+    height: auto;
+    background-color: #1D257B;
+    padding-block: 2rem 0;
 }

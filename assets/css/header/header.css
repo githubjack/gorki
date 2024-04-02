@@ -9,7 +9,7 @@ Watch for scroll events
     position: fixed;
     top:0;
     z-index:100;
-    background-color: #1FAFD4;
+    background-color: rgba(29, 37, 123, 1);
     width: 100%;
     scale: 0 1;
     transform-origin: left;
@@ -31,20 +31,20 @@ Watch for scroll events
     top: 0;
     padding-block-start: 0.20rem;
     background-color: #fff;
+    background-color: #869B75;
+    background-color: #1D257B;
     z-index: 20;
 }
 @media screen and (min-width: 300px) {
   .fixed{
-    width: 100vw;
-
+    /* width: 100vw; */
   }
 }
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 980px;
-    margin-inline: auto;
+
 }
 
 .navbar .logo img{
@@ -53,25 +53,18 @@ Watch for scroll events
 }
 
 @media screen and (min-width: 300px) {
-  .navbar .logo {
-    width: 109px;
-    height: 29px;
-    padding-left:0.5rem;
-  }
+
 }
 
 @media screen and (min-width: 768px) {
-  .navbar .logo {
-    width: 109px;
-    height: 25px;
-  }
+
 }
 
 @media screen and (min-width: 980px) {
-  .navbar .logo {
-    width: 139px;
-    height: 32px;
+  .navbar > .logo {
+  margin-inline-start: -7px;
   }
+
 }
 
 .navbar ul {
@@ -96,7 +89,7 @@ Watch for scroll events
     bottom: 1rem;
     height: 2px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #0073BA;
     
     translate: var(--_translate);
     scale: var(--_width, 0) 1;
@@ -128,13 +121,10 @@ Watch for scroll events
   }
 
 .navbar a {
-    /* About Github Whitepaper */
-font-weight: 600;
-font-size: 18px;
+font-weight: 500;
+font-size: 13px;
 line-height: 50px;
-color: rgba(0, 0, 0, 0.5);
-opacity: 0.7;
-position: relative;
+color: #0073BA;
 }
 .navbar a:hover,
 .navbar a:focus-visible{
@@ -152,7 +142,6 @@ position: relative;
   }
 
   .fixed .hamburger{
-    /* hamburger */  
   position: absolute; 
   right: 1.5rem;
   top: 0.6rem;
