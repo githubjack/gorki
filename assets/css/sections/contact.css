@@ -1,69 +1,124 @@
 .contact {
     display: flex;
-    background-color: #0e0e0e;
-
-}
-
-.contact .contact-info {
+    background-color: #000000;
+  
+  }
+  
+  .contact .contact-info {
     height: auto;
     display: flex;
-}
-
-.contact-header {
+  }
+  
+  .contact-header {
     font-family: 'Inter';
     color: #0073BA;
-}
-
-@media screen and (min-width: 980px) {
-    .contact {
-    background-image: url(../../images/contact-map-desktop.png);
-    background-repeat: no-repeat;
-    background-position: 70% 40%;
-    background-size: 533px 267px;
-}
-
-    
+  }
+  
+  @media screen and (min-width: 300px) {
     .contact .contact-info {
-        flex-wrap: wrap;
-        flex-direction: column;
-
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      padding-inline: 2rem
     }
+  
     .contact-info p {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.04em;
-        color: rgb(255 253 253 / 50%);
-        margin-block: 4rem;
-        width: 16ch;
-        display: flex;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.04em;
+      color: rgb(255 253 253 / 50%);
+      margin-block: 4rem;
+      width: 16ch;
+      display: flex;
     }
+  
     .contact-info a {
-        font-weight: 700;
-        text-decoration: underline;
-        color: rgb(255 253 253 / 100%);
+      font-weight: 700;
+      text-decoration: underline;
+      color: rgb(255 253 253 / 100%);
     }
+  
     .contact-header {
-        max-width: 9ch;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-weight: 700;
-        font-size: 128px;
-        line-height: 96px;
-        letter-spacing: -0.04em;
-
+      max-width: 9ch;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 48px;
+      letter-spacing: -0.04em;
+  
     }
+  
     .contact-header .first-word {
-        font-family: 'Inter';
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.11em;
-        color: rgba(255, 255, 255, 0.5);
-        padding-inline: 1rem;
-        padding-block: 1rem;
+      font-family: 'Inter';
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.11em;
+      color: rgba(255, 255, 255, 0.5);
+      padding-inline: 1rem;
+      padding-block: 1rem;
     }
-
-}
+  }
+  
+  @media screen and (min-width: 990px) {
+    .contact {
+      background-image: url(../../images/contact-map-desktop.png);
+      background-repeat: no-repeat;
+      background-position: 70% 40%;
+      background-size: 533px 267px;
+    }
+  
+  
+    .contact .contact-info {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 980px;
+  
+    }
+  
+    .contact-info p {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.04em;
+      color: rgb(255 253 253 / 50%);
+      margin-block: 4rem;
+      width: 16ch;
+      display: flex;
+    }
+  
+    .contact-info a {
+      font-weight: 700;
+      text-decoration: underline;
+      color: rgb(255 253 253 / 100%);
+    }
+  
+    .contact-header {
+      max-width: 9ch;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: 700;
+      font-size: 128px;
+      line-height: 96px;
+      letter-spacing: -0.04em;
+  
+    }
+  
+    .contact-header .first-word {
+      font-family: 'Inter';
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.11em;
+      color: rgba(255, 255, 255, 0.5);
+      padding-inline: 1rem;
+      padding-block: 1rem;
+    }
+  
+  }

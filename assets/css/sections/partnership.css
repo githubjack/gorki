@@ -2,49 +2,75 @@
 
 .partners {
     display: flex;
-
-}
-
-@media screen and (min-width: 980px) {
-    .partners {
-        flex-direction: column;
-        background-color: #0e0e0e;
-    }
-
-    .partners-title {
-        display: flex;
-        flex-direction: row;
-   
-    }
+    flex-direction: column;
+  }
+  
+  .partners-title {
+    border-radius: 16px;
+  }
+  
+  .partners-title h2 {
+    background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
+    background-size: 100%;
+    background-clip: text;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .partners-list {
+    background-color: rgba(26, 42, 127, 0.5);
+  }
+  
+  @media screen and (min-width: 300px) {
     .partners-title h2 {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 77px;
-        display: flex;
-        color: #0073ba;
-        text-transform: uppercase;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 40px;
+      text-transform: uppercase;
+      background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
+      background-size: 100%;
+      background-clip: text;
+      background-repeat: repeat;
+  
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      margin-block: 0 2rem;
     }
-
+  
+    .partners-list {
+      border-radius: 16px;
+    }
+  
+  }
+  
+  @media screen and (min-width: 980px) {
+  
+    .partners-title {
+      display: flex;
+      flex-direction: row;
+      width: 990px;
+      margin-block: 2rem 6rem;
+    }
+  
+    .partners-title h2 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 77px;
+      display: flex;
+      text-transform: uppercase;
+    }
+  
     .partners .partners-list {
-        display: flex;
-        flex: 1;
-        justify-content: flex-start;
-        background-color: #ffffff;
-        padding-block: 1rem;
+      display: flex;
+      flex: 1;
+      justify-content: flex-start;
+  
+      width: 990px;
+      border-radius: 16px;  
     }
-}
-
-@media screen and (min-width: 280px) {
-    .partners{
-        flex-direction: column;
-    }
-    .partners h2{
-
-    }
-    .partners .list {
-     }
-    
-}
-
-
-
+  }

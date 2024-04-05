@@ -1,6 +1,7 @@
 footer{
     display: flex;
     background-color: #1D257B;
+    background-color: #000000;
     flex-direction: column;
 }
 
@@ -17,6 +18,87 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+
+.subscribe .subscribe-form {
+    border-radius: 8px;
+}
+.subscribe-form .input-button {
+    border-radius: 0 5px 5px 0;
+}
+@media screen and (min-width: 300px) {
+
+    footer .footnotes {
+        padding-inline: 2rem;
+    }
+    .footnotes .subscribe {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footnotes .subscribe p {
+        font-weight: 600;
+        font-size: .8rem;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        margin-block-end: .5rem;
+        color: #0073BA;
+    }
+    .subscribe .subscribe-form {
+        border: 3px solid #0073BA;
+        width: 423px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        color: #0073BA;
+    }
+
+    .subscribe-form .input-button {
+        height: 66px;
+        display: flex;
+        padding-inline: 2rem;
+        background-color: #ffd700;
+        color: #938f8f;
+    }
+    .subscribe-form input[type=button] {
+        cursor: pointer;
+     }
+     .subscribe-form input[type=email] {
+         padding-inline-start: 1rem;
+     }
+
+     .urls ul {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size:0.9rem;
+        line-height: 24px;
+        padding-inline-start: 0.4rem;
+        margin-block: 1.5rem;
+    }
+    .urls li {
+        letter-spacing: 0.04em;
+        padding-block-end: 8px;
+    }
+    .urls a {
+        color: #0073ba;
+        font-size: .8rem;
+
+    }
+    .brand {
+        padding-block-end: 3rem;
+    }
+    .brand p {
+        color: #0073ba;
+        font-size: .8rem;
+        font-weight: 600;
+        padding-inline-start: 1rem;
+    }
 }
 @media screen and (min-width: 980px) {
     footer .footnotes {

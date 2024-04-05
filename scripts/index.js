@@ -1,41 +1,27 @@
 console.log('javascript file found');
 
-// nav
+
 function toggleMenu() {
     const toggleButton = document.getElementById("toggleButton");
-    const hamburgerList = document.getElementById("hamburger-list");
-
-    if (toggleButton.textContent === "open") {
-        // Show the menu
-        hamburgerList.style.display = "block";
-        
-        // Change button text and class
-        toggleButton.textContent = "close";
-      }
-      else {
-        // Hide the menu
-        hamburgerList.style.display = "none";
-        
-        // Change button text and class
-        toggleButton.textContent = "open";
-      }
-}
-
-
-// pdf opener
-
-function openInNewTab(url) {
-    const win = window.open(url, '_blank');
-    win.focus();
+    const mobileList = document.getElementById("mobileList");
+    const hamburgerIcon = document.querySelector(".icon-hamburger");
+    const closeIcon = document.querySelector(".icon-close");
+    
+    if (toggleButton.classList.contains("open")) {
+      // Close the menu
+      mobileList.style.display = "none";
+      toggleButton.classList.remove("open");
+      hamburgerIcon.style.display = "block";
+      closeIcon.style.display = "none";
+    } else {
+      // Open the menu
+      mobileList.style.display = "block";
+      toggleButton.classList.add("open");
+      hamburgerIcon.style.display = "none";
+      closeIcon.style.display = "block";
+    }
   }
 
-const pdfH = document.querySelector('#pdfH');
-// pdfH.addEventListener('click', function(){
-//     console.log("button was click");
-
-    // pdfH.addEventListener('click', function(event)  {
-    //     openInNewTab('http://localhost:5500/gorki/assets/docs/gorki__healthcare_whitepaper.pdf');
-    //  });
 
 // testimonies js
 

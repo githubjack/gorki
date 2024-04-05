@@ -1,240 +1,175 @@
+h2 {
+  font-family: 'Inter';
+}
 
+.text-transform-discovery {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
+  background-size: 100%;
+  background-clip: text;
+  background-repeat: repeat;
 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
 
- h2, ul {
-   font-family: 'Inter';
-   }
-   .text-transform-discovery {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #0073BA;
-    display: flex;
-    align-items: center;
-   }
-
+.text-transform-discovery,
+.title-section {
+  display: flex;
+}
 
 /*
 Utilities
 */
-
-.block-spacing-xl {
-  padding-block: 8rem;
+.title-section {
+  position: relative;
+  border-radius: 16px;
 }
 
-.block-spacing-md {
-  padding-block: 4rem;
-}
-.inline-spacing-xl {
-  padding-inline: 8rem;
-}
- .title-section {
-   display: flex;
-   position: relative;
- }
 
- .title-section::before {
-  content: '';
-  width: 296px;
-  height: 297px;
-  background: transparent;
-  background-image: url(../../images/gorki-token.png);
+/*
+ sections
+ */
+.ecosystem,
+.eco-items,
+.eco-list,
+.eco-list>ul,
+.eco-content {
+  display: flex;
+}
+
+.eco-content {
+  flex-direction: column;
+}
+
+.eco-content .body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.body .body-copy {
+  color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  color: #aacb5b;
+  font-family: 'Inter';
+}
+
+
+.body .wp-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32ch;
+  padding: 1.1rem 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 17px;
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 4px;
+  background: linear-gradient(to right, #0073BA, #2FFF0D);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.body .wp-button::before {
+  content: "";
   position: absolute;
-  left: 8rem;
-  top: -68px;
- }
- .contrast-header {
-  background-color: #0e0e0e;
- }
- .justify-end {
-  justify-content: flex-end;
- }
- .justify-center {
-    margin-inline: auto;
- }
- .limit-chars {
-  width: 10ch;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background-color: #B0C0A4;
+  background-color: #1D257B;
+  background-color: #0e0e0e33;
+  background-color: #000;
+  border-radius: 3px;
+  z-index: -1;
+  transition: 200ms;
 }
 
- .eco-container {
-    background-color: #1D257B;
- }
- .ecosystem {
-   display: flex;
- }
- .ecosystem .eco-items {
-   display: flex;
- }
- 
- .ecosystem .eco-list { 
-   display: flex;
- }
- .eco-list ul {
-   display: flex;
- }
- .eco-list h4 {
-   text-align: center;
-   text-transform: uppercase;
-   color: #010F40; 
- }
- 
- .eco-content {
-   display: flex;
-   flex-direction: column;
- }
- 
- .eco-content .body {
-   display: flex;
-   flex-direction: column;
-   flex: 1;
- }
- 
- .body .body-copy {
- color: rgba(0, 0, 0, 0.5);
- color: #ffffff;
- font-family: 'Inter';
- }
- .body .wp-button {
-     display: inline-flex;
-     justify-content: center;
-     align-items: center;
-     width: 32ch;
-     padding: 1.1rem 1.5rem;
-     text-transform: uppercase;
-     font-family: 'Inter';
-     font-weight: 600;
-     font-size: 10px;
-     line-height: 17px;
-     border: none;
-     outline: none;
-     position: relative;
-     border-radius: 4px;
-     background: linear-gradient(to right, #0073BA, #2FFF0D);
-     cursor: pointer;
-     z-index: 1;
- }
- .body .wp-button::before {
-   content: "";
-   position: absolute;
-   top: 1px;
-   right: 1px;
-   bottom: 1px;
-   left: 1px;
-   background-color: #B0C0A4;
-   background-color: #1D257B;
-   border-radius: 3px;
-   z-index: -1;
-   transition: 200ms;
- }
- .body .wp-button:hover::before {
-   opacity: 50%;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
- }
- .body .wp-button:hover::after{
-   color: #ffffff;
- }
- .body .wp-button::after {
-   content: attr(data);
-   font-size: 10px;
-   font-weight: 700;
-   background: linear-gradient(to right, #2FFF0D, #0073BA);
-    -webkit-background-clip: text;
-   color: transparent;
-   transition: 200ms;
- }
+.body .wp-button:hover::before {
+  opacity: 50%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
 
- @media screen and (min-width: 280px) {
-   .ecosystem {
-     flex-direction: column;
-   }
-   .eco-items {
-     flex-direction: column;
-   }
-   .eco-list { 
-     flex-direction: column;
-   }
-   .eco-list ul {
-     flex: 1;
-     flex-direction: column;
-   }
-     .eco-list li {
-     display: flex;
-     flex-direction: column;
-   }
- }
- 
- @media screen and (min-width: 980px){
-   .ecosystem {
-    flex-direction: row;
-    position: relative;
-   }
+.body .wp-button:hover::after {
+  color: #ffffff;
+}
 
-   .ecosystem::before {
-    content: '';
-    width: 246px;
-    height: 250px;
-    position: absolute;
-    background-color: transparent;
-    background-image: url(../../images/ecosystem.png);
-    bottom: -10.5rem;
-    right: 8rem;
-   }
-   
-   .eco-items {
-     flex-direction: row;
-     flex: 1;
-     justify-content: space-between;
-     align-items: flex-end;
-     align-items: center;
-   }
-   
-   .eco-list {
-     flex-direction: row;
-   }
-   .eco-list ul {
-     flex: 1;
-     flex-wrap:wrap;
-   }
+.body .wp-button::after {
+  content: attr(data);
+  font-size: 10px;
+  font-weight: 700;
+  background: linear-gradient(to right, #2FFF0D, #0073BA);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
 
-   .eco-list .button-group {
+@media screen and (min-width: 300px) {
+  .ecosystem {
+    flex-direction: column;
+  }
+
+  .eco-items {
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 2rem;
+  }
+
+  .text-transform-discovery {
+    margin-block: 0 2rem;
+  }
+
+  .eco-list {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .eco-content {
+    padding-inline: 2rem;
+    ;
+  }
+
+  .eco-list .button-group {
     display: flex;
     flex: 1;
     flex-direction: row;
-}
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-   .eco-list li {
-     display: flex;
-     flex-direction: column;
-     gap: 2rem;
-     align-items: center;
-     justify-content: center;
-     margin-inline: 1rem
-   }
-
-    
   .eco-list .button-container {
     display: flex;
     margin-inline: 4px;
-    width: 168px;
-    height: 44px;
-    height: 52px;
+    min-width: 380px;
+    height: 56px;
     align-items: flex-start;
   }
-   
 
   .eco-list .button-container .button-item {
     padding-block: 8px;
     font-weight: 600;
-    font-size: 8px;
-    line-height: 10px;
-    letter-spacing: 0.04em;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     padding-inline: 16px;
-    height: 52px;
+    height: 64px;
+    flex: 1;
   }
 
   .button-item {
@@ -245,92 +180,183 @@ Utilities
     background: linear-gradient(to right, #0073BA, #A4BC78, #FFE454);
     cursor: pointer;
     z-index: 1;
+  }
+
+  .button-item::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background-color: #0e123b;
+    background-color: #000;
+    border-radius: 3px;
+    z-index: -1;
+    transition: 200ms;
+  }
+
+  .button-item:hover::before {
+    opacity: 50%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .button-item:hover::after {
+    color: #ffffff;
+  }
+
+  .button-item::after {
+    content: attr(data);
+    font-size: 8px;
+    font-weight: 700;
+    background: linear-gradient(to right, #FFE454, #A4BC78, #0073BA);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
+  }
+
+  .title-section {
+    width: 96%;
+
+  }
 }
 
-.button-item::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  left: 1px;
-  background-color: #0e0e0e;
-  border-radius: 3px;
-  z-index: -1;
-  transition: 200ms;
+@media screen and (min-width:320px) {
+
+  .title-section {
+    width: 96%;
+  }
+
+  .wp-button {
+    margin-block: 1.5rem 0;
+  }
+
+  .body .body-copy {
+    margin-block: 0 1.5rem;
+  }
 }
 
-.button-item:hover::before {
-  opacity: 50%;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
+@media screen and (min-width: 990px) {
+  .ecosystem {
+    flex-direction: row;
+    position: relative;
+  }
 
-.button-item:hover::after{
-  color: #ffffff;
-}
-.button-item::after {
-  content: attr(data);
-  font-size: 8px;
-  font-weight: 700;
-  background: linear-gradient(to right, #FFE454, #A4BC78, #0073BA);
-   -webkit-background-clip: text;
-  color: transparent;
-  transition: 200ms;
-}
-   .eco-content {
-     padding-block: 96px 120px;
-   }
-   .eco-content .body {
-    padding-block-end: 6.5rem;
-   }
-   .eco-content .body .body-copy {
-     font-weight: 400;
-     font-size: 20px;
-     line-height: 24px;
-     margin-block-end: 2.5rem;
-     width: 60ch;
-     padding-inline: 0 1rem;
- }
-   
-   .eco-content .body .push-down {
-     padding-block-start: 96px;
-   }
-   .eco-content .contrast-header{
+
+  .eco-items {
+    flex-direction: row;
+    flex: 1;
+    max-width: 990px;
+    border-radius: 16px;
+
+  }
+
+  .eco-list {
+    flex-direction: row;
+  }
+
+  .eco-list .button-group {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .eco-list .button-container {
+    display: flex;
+    margin-inline: 4px;
+    min-width: 380px;
+    height: 56px;
+    align-items: flex-start;
+  }
+
+
+  .eco-list .button-container .button-item {
+    padding-block: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-inline: 16px;
+    height: 56px;
+    flex: 1;
+  }
+
+  .button-item {
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 4px;
+    background: linear-gradient(to right, #0073BA, #A4BC78, #FFE454);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .button-item::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background-color: #0e123b;
+    background-color: #000;
+    border-radius: 3px;
+    z-index: -1;
+    transition: 200ms;
+  }
+
+  .button-item:hover::before {
+    opacity: 50%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .button-item:hover::after {
+    color: #ffffff;
+  }
+
+  .button-item::after {
+    content: attr(data);
+    font-size: 8px;
+    font-weight: 700;
+    background: linear-gradient(to right, #FFE454, #A4BC78, #0073BA);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
+  }
+
+  .eco-content .body {
+    width: max-content;
+  }
+
+  .eco-content .body .body-copy {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-block-end: 2.5rem;
+    width: 60ch;
+    padding-inline: 0 1rem;
+  }
+
+  .eco-content .contrast-header {
     width: 100%;
-   }
- }
- 
+  }
 
+  .eco-content .title-section {
+    width: 990px;
+    border-radius: 16px;
+    background-image: url(../../images/gorki-token.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 234px 234px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

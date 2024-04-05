@@ -1,26 +1,23 @@
 .hero-container {
   width: 100%;
   height: auto;
-  background-color: #1D257B;
 }
+
 .hero {
   display: flex;
   justify-content: space-between;
 }
-.inline-spacing-xl {
-    padding-inline: 8rem;
-}
-.block-spacing-xl {
-    padding-block: 8rem;
-}
+
 .text-info {
   display: flex;
   width: 100%;
 }
+
 .code-info {
   display: flex;
   width: 100%;
 }
+
 .hero-title {
   display: flex;
   flex-direction: row;
@@ -28,6 +25,7 @@
   align-content: flex-start;
   flex: 1;
 }
+
 .display-9 {
   width: 11ch;
   font-weight: 800;
@@ -35,14 +33,17 @@
   line-height: 96px;
   display: flex;
   text-transform: uppercase;
+  letter-spacing: -4px;
 }
+
 .gradient-alpha {
-    background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
+
 .gradient-beta {
   background: linear-gradient(90deg, rgba(152, 182, 95, 0.5) 2.5%, rgba(225, 205, 28, 0.5) 42%, rgba(32, 152, 220, 0.5) 72.5%);
   -webkit-background-clip: text;
@@ -50,6 +51,7 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
 .sub-heading {
   color: #0073BA;
   font-weight: 600;
@@ -58,83 +60,48 @@
 }
 
 .video-button-ctrl {
-    width: 63px;
-    height: 55px;
-    margin-inline: 1rem 0;
-    margin-block: .8rem 0
+  width: 63px;
+  height: 55px;
 }
 
 
 .code-info .code-container {
-    flex: 1;
-    background-color: #1B2273;
-    margin-inline-start: 3rem;
+  flex: 1;
+  background-color: #1b227352;
+  border-radius: 16px;
 }
 
 .code-container .code {
-    padding-block: 2.5rem;
-    padding-inline: 2.5rem
+  padding-block: 2.5rem;
+  padding-inline: 2.5rem
 }
+
 .cta {
   display: flex;
   justify-content: center;
 }
-.cta-button{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 32ch;
-    padding: 1.1rem 1.5rem;
-    text-transform: uppercase;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 17px;
-    border: none;
-    outline: none;
-    position: relative;
-    border-radius: 4px;
-    background: linear-gradient(to right, #0073BA, #2FFF0D);
-    cursor: pointer;
-    z-index: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .cta-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 32ch;
-    padding: 1.1rem 1.5rem;
-    text-transform: uppercase;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 17px;
-    border: none;
-    outline: none;
-    position: relative;
-    border-radius: 4px;
-    background: linear-gradient(to right, #0073BA, #2FFF0D);
-    cursor: pointer;
-    z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32ch;
+  padding: 1.1rem 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 17px;
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 4px;
+  background: linear-gradient(to right, #0073BA, #2FFF0D);
+  cursor: pointer;
+  z-index: 1;
 }
+
 .cta-button::before {
   content: "";
   position: absolute;
@@ -142,13 +109,12 @@
   right: 1px;
   bottom: 1px;
   left: 1px;
-  background-color: #B0C0A4;
-  background-color: #7B9366;
-  background-color: #1D257B;
+  background-color: #000000;
   border-radius: 3px;
   z-index: -1;
   transition: 200ms;
 }
+
 .cta-button:hover::before {
   opacity: 50%;
   top: 0px;
@@ -156,18 +122,65 @@
   bottom: 0px;
   left: 0px;
 }
-.cta-button:hover::after{
+
+.cta-button:hover::after {
   color: #ffffff;
 }
+
 .cta-button::after {
   content: attr(data);
   font-size: 10px;
   font-weight: 700;
   background: linear-gradient(to right, #2FFF0D, #0073BA);
-   -webkit-background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   transition: 200ms;
 }
 
+@media screen and (min-width: 300px) {
+  .hero {
+    flex-wrap: wrap;
+  }
 
+  .text-info {
+    padding: 2rem;
+  }
 
+  .code-info {
+    margin-inline: 2rem;
+  }
+
+  .cta {
+    margin-block: 1rem;
+  }
+
+  .display-9 {
+    font-size: 64px;
+    line-height: 68px;
+  }
+
+  .sub-heading {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .hero {
+    width: 990px;
+    flex-wrap: nowrap;
+  }
+
+  .text-info {
+    width: 550px;
+  }
+
+  .code-info {
+    width: 380px;
+  }
+
+  .cta {
+    margin-block: 11rem 0;
+  }
+
+}

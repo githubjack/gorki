@@ -1,18 +1,112 @@
 /* 
 Layouts 
 */
-
-.core-info {
-    width: 100%; 
-
-    height:auto;
-    background-image: linear-gradient(297.42deg, #D6FE52 -3.32%, #7D9566 34.69%, #1D257B 67.36%);
-    background-size: cover;
-}
-
 .hero-container {
     width: 100%;
     height: auto;
-    background-color: #1D257B;
-    padding-block: 2rem 0;
-}
+    background-color: #000000;
+  }
+  
+  
+  /*
+  Utilities
+  */
+  .primary-header-clr {
+    background-color: #000000;
+  }
+  
+  .contrast-header-clr {
+    background-color: #0e0e0e;
+  }
+  
+  .contrast-header-alpha-clr {
+    background-color: #00000085;
+  }
+  
+  .dashed-border {
+    border: 2px dashed;
+    border-color: #1D257B;
+  }
+  
+  .grouped-theme {
+    /*
+      can be used to place background images to create e theme
+      */
+    background-color: #000000;
+  }
+  
+  /*
+  acessibility
+  */
+  
+  /*
+  for header
+  */
+  .visually-visible {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  
+  .visually-hidden {
+    /*
+  to do for accessibility
+  */
+  }
+  
+  /*
+  alignment
+  */
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .justify-center {
+    margin-inline: auto;
+  }
+  
+  /*
+  spacing
+  */
+  
+  .section-spacing {
+    padding-block: 116px;
+  }
+  
+  .block-spacing-uneven {
+    padding-block: 8rem 12rem;
+  }
+  
+  .block-spacing-xl {
+    padding-block: 8rem;
+  }
+  
+  .block-spacing-md {
+    padding-block: 4rem;
+  }
+  
+  .block-spacing-sm {
+    padding-block: 2rem;
+  }
+  
+  .inline-spacing-xl {
+    padding-inline: 8rem;
+  }
+  
+  .inline-spacing-start-xl {
+    padding-inline: 12rem 0
+  }
+  
+  .inline-spacing-md {
+    padding-inline: 4rem;
+  }
+  
+  .inline-spacing-sm {
+    padding-inline: 2rem;
+  }
+  
+  /*
+    characters
+    */
+  .limit-chars {
+    width: 10ch;
+  }
