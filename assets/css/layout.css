@@ -2,9 +2,10 @@
 Layouts 
 */
 .hero-container {
-    width: 100%;
-    height: auto;
-    background-color: #000000;
+    /* width: 100%;
+    height: auto; */
+    background-color: var(--mid-tone-clr);
+    /* padding-block: var(--vs-xl); */
   }
   
   

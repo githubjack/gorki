@@ -28,52 +28,63 @@
 
 .display-9 {
   width: 11ch;
-  font-weight: 800;
-  font-size: 84px;
-  line-height: 96px;
   display: flex;
   text-transform: uppercase;
   letter-spacing: -4px;
+  font-size: var(--fs-header-1);
+  font-weight: var(--fw-regular);
+  /* line-height: 56px; */
+
+
 }
 
 .gradient-alpha {
-  background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
+  background: linear-gradient(90deg, #0073BA 0%, #D6FE52 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
+  }
 
-.gradient-beta {
+/* .gradient-beta {
   background: linear-gradient(90deg, rgba(152, 182, 95, 0.5) 2.5%, rgba(225, 205, 28, 0.5) 42%, rgba(32, 152, 220, 0.5) 72.5%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
+} */
 
 .sub-heading {
-  color: #0073BA;
-  font-weight: 600;
-  font-size: 36px;
+  color: var(--lime-green-900);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-header-1);
   line-height: 44px;
 }
 
 .video-button-ctrl {
-  width: 63px;
-  height: 55px;
+  /* width: 63px;
+  height: 55px; */
+  
 }
 
 
 .code-info .code-container {
   flex: 1;
-  background-color: #1b227352;
+  /* code-container-lighten */
+  width: 388px;
+  height: 347.65px;
+  background-color: rgba(29, 37, 123, 0.08);
+  border: 1px solid rgba(196, 223, 243, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
+
 }
 
 .code-container .code {
-  padding-block: 2.5rem;
-  padding-inline: 2.5rem
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 16px 0;
 }
 
 .cta {
@@ -148,6 +159,7 @@
 
   .code-info {
     margin-inline: 2rem;
+    margin-block: 0 2rem;
   }
 
   .cta {
@@ -160,17 +172,35 @@
   }
 
   .sub-heading {
-    font-size: 24px;
-    line-height: 40px;
+    /* font-size: 24px;
+    line-height: 40px; */
+    font-size: var(--fs-header-1);
   }
 }
 
 @media screen and (min-width: 990px) {
+  .hero-container {
+    padding-block: var(--vs-xl);
+  }
   .hero {
     width: 990px;
     flex-wrap: nowrap;
   }
-
+  .display-9 {
+    line-height: 92px;
+  }
+  .sub-heading {
+    color: var(--lime-green-900);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-header-2);
+    line-height: 48px;
+    line-height: 14px;;
+    letter-spacing: -1px;
+  }
+  .video-button-ctrl {
+    position: relative;
+    top: 20px;
+  }
   .text-info {
     width: 550px;
   }

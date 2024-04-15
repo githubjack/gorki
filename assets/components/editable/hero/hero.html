@@ -1,20 +1,47 @@
-<!--
-
-    code for php implementation as an include
--->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorki</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/header/header.css" />
+    <link rel="stylesheet" href="./assets/css/sections/hero.css" />
+    <link rel="stylesheet" href="./assets/css/sections/card.css" />
+    <link rel="stylesheet" href="./assets/css/sections/discovery.css" />
+    <link rel="stylesheet" href="./assets/css/sections/testmony.css" />
+    <link rel="stylesheet" href="./assets/css/sections/partnership.css" />
+    <link rel="stylesheet" href="./assets/css/sections/contact.css" />
+    <link rel="stylesheet" href="./assets/css/footer/footer.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+</head>
+<body>
 <div class="hero-container">
-    <section class="hero inline-spacing-xl">
+    <section class="hero justify-center">
       <div class="text-info">
-        <h1 class="hero-title">
-            <span class="gradient-alpha display-9">unleashing</span>
-            <span class="gradient-beta sub-heading">the power of concurrency</span>
-            <span class="video-button-ctrl">
-                <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
-                    <img src="./assets/images/play-video.png" alt="play video" />
-                </a>
-            </span>
-        </h1>
+        <div class="hero-title">
+            <h1 class="visually-visible">
+                <span class="gradient-alpha display-9">unleashing</span>
+                <span class="sub-heading">the power of concurrency
+                    <span class="video-button-ctrl">
+                        <a data-fancybox="modal" href="https://www.youtube.com/watch?v=VW7ats17DTM">
+                            <img src="./assets/images/play-video.png" alt="play video" />
+                        </a>
+                    </span>
+
+                </span>
+
+            </h1>
+            <div class="cta">
+                <button id="cta-button" onclick="window.open('./assets/docs/gorki___whitepaper.pdf', '_blank');" class="cta-button" data="get white paper"></button>
+            </div>
+        </div>
       </div>
       <div class="code-info">
         <div class="code-container">
@@ -24,7 +51,6 @@
         </div>
       </div>
     </section>
-    <section class="cta inline-spacing-xl">
-        <button id="cta-button" onclick="window.open('./assets/docs/gorki___whitepaper.pdf', '_blank');" class="cta-button" data="get white paper"></button>
-    </section>
   </div>
+  </body>
+  </html>

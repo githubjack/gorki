@@ -1,0 +1,69 @@
+.blockchain-container{
+    display: flex;
+}
+
+.blockchain-container {
+  flex-direction: column;
+  background-color: var(--mid-tone-clr);
+  padding-inline: 1.5rem;
+
+}
+
+.blockchain-title {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-header-2);
+    text-transform: capitalize;
+    color: var(--lime-green-900);
+}
+.blockchain-title span {
+    color: var(--cerulean-clr-900);
+}
+
+.content-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.picture-element {
+    display: flex;
+    flex: 1;
+}
+.custom-html {
+    display: flex;
+}
+
+@media screen and (min-width: 300px) {
+
+    .blockchain-container {
+      width: 100%;
+    }
+
+  }
+
+  @media screen and (min-width: 990px) {
+
+  
+    .blockchain-container {
+        width: 100%;
+        padding-block: var(--vs-vl);
+    }
+    .blockchain-container section {
+        width: 990px;
+        position: relative;
+    }
+    section .number-container {
+        position: absolute;
+        left: -42px;
+        top: 6px;
+        width: 36px;
+        height: 36px;
+    }
+    .number-container .number{ 
+        width: 100%;
+    }
+    .blockchain-title {
+        line-height: 52px;
+
+    }
+  
+  }

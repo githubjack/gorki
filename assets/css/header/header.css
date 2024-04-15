@@ -7,8 +7,7 @@ Watch for scroll events
   position: fixed;
   top: 0;
   z-index: 100;
-  background-color: rgba(29, 37, 123, 1);
-  background-color: #2FFF0D;
+  background-color: var(--lime-green-900);;
   width: 100%;
   scale: 0 1;
   transform-origin: left;
@@ -32,17 +31,21 @@ Watch for scroll events
   position: sticky;
   top: 0;
   padding-block-start: 0.20rem;
-  background-color: #fff;
-  background-color: #869B75;
-  background-color: #1D257B;
-  background-color: #000;
+  background-color: var(--mid-tone-clr);
   z-index: 20;
 }
 
+.navbar-content {
+  position: relative;
+  z-index: 21;
+}
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  inset: 0;
+  z-index: 22;
 
 }
 
@@ -51,7 +54,10 @@ Watch for scroll events
   object-fit: contain;
 }
 
-
+.navbar .resources {
+  display: flex;
+  margin-inline-start: auto;
+}
 .navbar ul {
   list-style: none;
   display: flex;
@@ -59,6 +65,7 @@ Watch for scroll events
   align-items: center;
   --_gap: 2rem;
 }
+
 
 .navbar li {
   overflow: hidden;
@@ -70,15 +77,13 @@ Watch for scroll events
 .navbar li::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 1rem;
+  left: 8px;
+  bottom: 1px;
+  width: 85%;
   height: 2px;
-  width: 100%;
-  background-color: #0073BA;
-
+  background-color: var(--tone-light-clr-500);
   translate: var(--_translate);
   scale: var(--_width, 0) 1;
-
   transition:
     scale 300ms var(--_scale-delay, 0ms),
     translate 500ms var(--_translate-delay, 0ms);
@@ -92,9 +97,7 @@ Watch for scroll events
 .navbar a {
   font-weight: 500;
   font-size: 13px;
-  line-height: 50px;
-  color: #0073BA;
-  color: #4b7f01;
+  color: var(--tone-light-clr-500);
 }
 
 .navbar a:hover,
@@ -121,7 +124,7 @@ Watch for scroll events
 .fixed .mobile-nav {
   position: absolute;
   right: 1.5rem;
-  top: 0.6rem;
+  top: 1rem;
   width: 24px;
   height: 24px;
   z-index: 25;
@@ -187,6 +190,10 @@ Watch for scroll events
   .navbar a {
     display: none;
   }
+  .navbar .btn-outline,
+  .navbar .btn-fill {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width:990px) {
@@ -197,11 +204,70 @@ Watch for scroll events
   .mobile-list {
     display: none;
   }
+  .navbar .btn-outline,
+  .navbar .btn-fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .btn-outline {
+    width: 116px;
+    height: 31.23px;
+    border: 1px solid var(--lime-green-900);;
+
+  }
+  .navbar .btn-fill {
+    width: 156px;
+    height: 31.23px;
+    background-color: var(--lime-green-900);;
+    margin-inline-start: 16px;
+  }
+  .navbar .btn-outline a,
+  .navbar .btn-fill a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+  }
+  .navbar .btn-outline a {
+    color: var(--tone-light-clr-500);
+  }
+  .navbar .btn-fill a {
+    background-color: var(--lime-green-900);;
+    color: var(--tone-dark-clr)
+  }
+
 }
 
 @media screen and (min-width: 990px) {
   .navbar {
     width: 990px;
+  }
+
+  .navbar .btn-fill,
+  .navbar .btn-outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .btn-outline {
+    width: 116px;
+    height: 31.23px;
+    border: 1px solid var(--lime-green-900);;
+
+  }
+  .navbar .btn-fill {
+    width: 156px;
+    height: 31.23px;
+    background-color: var(--lime-green-900);;
+    margin-inline-start: 16px;
+  }
+  .navbar .btn-outline a {
+    color: var(--tone-light-clr-500);
+  }
+  .navbar .btn-fill a {
+    background-color: var(--lime-green-900);;
+    color: var(--tone-dark-clr)
   }
 }
 

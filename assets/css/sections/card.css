@@ -1,56 +1,47 @@
-h2 {
-  color: #0073BA;
+
+.card-container {
+  background-color: var(--mid-tone-clr);
 }
 
-h3 {
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
-  color: #010F40;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-}
 
-.card-list-container,
+.card-banner,
 .card-list,
 .card,
 .card-body {
   display: flex;
 }
 
-.card-list-container {
-  flex-direction: column;
-  background-color: #000000;
-  background-color: #1b227352;
+.card-banner {
+  position: relative;
+}
+.card-banner h2 {
+  font-weight: var(--fw-light);
+  font-size: var(--fs-header-2);
+  text-transform: capitalize;
+  color: var(--lime-green-900);
+}
+.card-banner h2 span {
+  color: var(--cerulean-clr-900);
+}
+.card-banner .number-container {
+  position:absolute;
+  width: 36px;
+  height: 36px;
+  /* left: -42px;
+  top: 6px; */
 }
 
+.card-banner .number-container .number{ 
+  width: 100%;
+}
+/* .card-banner h2 {
+font-size: var(--fs-header-3);
+} */
 .card-header {
-  color: #abb78f
-}
-
-.text-transform-card-list {
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 48px;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  padding-block-start: 155px;
-  width: 28ch;
-  letter-spacing: 3px;
-  background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
-  background-size: 100%;
-  background-clip: text;
-  background-repeat: repeat;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  color: var(--lime-green-900);
 }
 
 .card {
-  background: linear-gradient(154deg, rgba(26, 42, 127, 0.5) 23.84%, #1a2401 66.69%);
   border-radius: 8px;
   border: 1px solid #3b4078;
 }
@@ -61,50 +52,36 @@ h3 {
 }
 
 .card-body .card-text {
-  color: rgb(1 15 64 / 80%);
-  color: #abb78f;
-  background-color: #aacb5b;
-  background-color: #91ad50;
-  background-color: #000000;
+  color: var(--lemon-line-clr-900);
   border-radius: 0 0 8px 8px;
 }
 
 @media screen and (min-width: 300px) {
-  .card-list {
-    flex-direction: column;
-    margin-inline: auto;
-    width: 80%;
+  .card-container{
+    padding: 1.5rem;
   }
-
-  .card-list-container {
-    width: 92%;
-    border-radius: 16px;
-    ;
-
+  .card-banner {
+    width: 100%;
   }
-
-  .text-transform-card-list {
-    font-size: 24px;
-    line-height: 32px;
+  .card-banner .number-container {
+    left: 0px;
+    top: -40px
+}
+  .card-header {
+    padding-block: 1.5rem;
     padding-inline: 2rem;
-  }
+    font-size: var(--fs-header-4);
 
+  }
+  .card-list {
+    width: 100%;
+    flex-direction: column;
+  }
   .card {
     flex-direction: column;
     width: 100%;
-    padding-block-start: 2rem;
-    background: linear-gradient(154deg, rgba(26, 42, 127, 0.5) 23.84%, #AACB5B 66.69%);
-    gap: 1rem;
-    margin-block: 0 2rem;
+    margin-block: 1.5rem;
   }
-
-  h3 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    padding-inline: 2rem
-  }
-
   .card-body {
     width: 100%;
     height: auto;
@@ -117,44 +94,56 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-  .text-transform-card-list {
-    font-size: 32px;
-    line-height: 40px;
+  .card-list {
+    flex-direction: column;
+    margin-inline: auto;
+    width: 50%;
   }
+  .card-header {
+    padding-inline: 2rem;
+  }
+  .card-banner {
+    width: 100%;
+  }
+  .card-banner .number-container {
+    left: 0px;
+    top: -40px
+}
 }
 
 @media screen and (min-width: 990px) {
+  .card-banner {
+    width: 990px;
+    margin-inline: auto;
+  }
+  .card-banner .number-container {
+      left: -42px;
+      top: 6px;
+  }
+  .card-banner h2 {
+    margin-inline: 1rem 0;
+    width: 15ch;
+    line-height: 90%;
+  }
+
+
   .card-list {
     flex-direction: row;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     justify-content: space-evenly;
-    padding-block: 12rem 8rem
-  }
-
-  .card-list-container {
     width: 990px;
-    position: relative;
-    border-radius: 16px;
-    align-items: flex-end;
-    background-image: url(../../images/layer-1-code.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: 288px 288px;
-
   }
-
   .card {
     flex-direction: column;
-    width: 268px;
     padding-block-start: 4.5rem;
-    background: linear-gradient(154deg, rgba(26, 42, 127, 0.5) 23.84%, #1a2401 66.69%);
     border-radius: 8px;
     border: 1px solid #3b4078;
     margin-inline: 1rem;
-
+    margin-block: 1rem;
+    min-height: 400px;
   }
-
   .card-header {
+    width: 20ch;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -166,14 +155,8 @@ h3 {
     padding-inline: 1.8rem 0;
   }
 
-  .text-transform-card-list {
-    justify-content: flex-end;
-    width: 100%;
-  }
-
   .card-body {
     width: 100%;
-    height: 212px;
   }
 
   .card-body .card-text {

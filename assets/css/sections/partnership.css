@@ -3,67 +3,57 @@
 .partners {
     display: flex;
     flex-direction: column;
+    background-color: var(--mid-tone-clr);
   }
   
   .partners-title {
     border-radius: 16px;
   }
   
+
   .partners-title h2 {
-    background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
-    background-size: 100%;
-    background-clip: text;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    font-weight: var(--fw-light);
+    font-size: var(--fs-header-2);
+    text-transform: capitalize;
+    color: var(--lime-green-900);
+    margin-block: 0 var(--vs-xx);
   }
-  
+.partners-title h2 span {
+    color: var(--cerulean-clr-900);
+  }
   .partners-list {
-    background-color: rgba(26, 42, 127, 0.5);
+    background-color: rgb(255 255 255);
+    padding: 1rem;
+    margin-block: 0 2rem;
   }
   
   @media screen and (min-width: 300px) {
     .partners-title h2 {
-      font-weight: 900;
-      font-size: 32px;
-      line-height: 40px;
-      text-transform: uppercase;
-      background: linear-gradient(90.86deg, #768E67 -1.62%, #1699EA 102.14%);
-      background-size: 100%;
-      background-clip: text;
-      background-repeat: repeat;
-  
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-background-clip: text;
-      -moz-text-fill-color: transparent;
-      margin-block: 0 2rem;
-    }
+      font-size: var(--fs-header-2);
+    } 
   
     .partners-list {
       border-radius: 16px;
     }
+    .partners-list img {
+      width: 100%;
+    }
   
   }
-  
+  @media screen and (min-width: 768px) {
+    .partners-list img {
+      width: auto;
+    }
+  }
   @media screen and (min-width: 980px) {
   
     .partners-title {
       display: flex;
       flex-direction: row;
       width: 990px;
-      margin-block: 2rem 6rem;
+      margin-inline: auto;
     }
   
-    .partners-title h2 {
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 77px;
-      display: flex;
-      text-transform: uppercase;
-    }
   
     .partners .partners-list {
       display: flex;
@@ -71,6 +61,10 @@
       justify-content: flex-start;
   
       width: 990px;
+      margin-inline: auto;
       border-radius: 16px;  
+    }
+    .partners-list img {
+      width: auto;
     }
   }

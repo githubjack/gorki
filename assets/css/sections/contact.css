@@ -1,6 +1,7 @@
 .contact {
     display: flex;
-    background-color: #000000;
+    background-color: var(--mid-tone-clr);
+    padding-block: 1rem;
   
   }
   
@@ -9,9 +10,20 @@
     display: flex;
   }
   
-  .contact-header {
+  .contact .contact-info .contact-header {
     font-family: 'Inter';
-    color: #0073BA;
+  }
+
+  .contact .contact-info .contact-header {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-header-2);
+    text-transform: capitalize;
+    color: var(--lime-green-900);
+    margin-block: 0 var(--vs-xx);
+    line-height: 1;
+  }
+.contact-info .contact-header span {
+    color: var(--cerulean-clr-900);
   }
   
   @media screen and (min-width: 300px) {
@@ -19,7 +31,6 @@
       flex-wrap: wrap;
       flex-direction: column;
       width: 100%;
-      padding-inline: 2rem
     }
   
     .contact-info p {
@@ -44,23 +55,6 @@
       max-width: 9ch;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      font-weight: 700;
-      font-size: 64px;
-      line-height: 48px;
-      letter-spacing: -0.04em;
-  
-    }
-  
-    .contact-header .first-word {
-      font-family: 'Inter';
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: 0.11em;
-      color: rgba(255, 255, 255, 0.5);
-      padding-inline: 1rem;
-      padding-block: 1rem;
     }
   }
   
@@ -100,25 +94,14 @@
   
     .contact-header {
       max-width: 9ch;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      font-weight: 700;
-      font-size: 128px;
-      line-height: 96px;
-      letter-spacing: -0.04em;
-  
+      font-weight: var(--fw-light);
+      font-size: var(--fs-header-2);
+      text-transform: capitalize;
+      color: var(--lime-green-900);
+      margin-block: 0 var(--vs-xx);
     }
-  
-    .contact-header .first-word {
-      font-family: 'Inter';
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: 0.11em;
-      color: rgba(255, 255, 255, 0.5);
-      padding-inline: 1rem;
-      padding-block: 1rem;
+    .contact-header span {
+      color: var(--cerulean-clr-900);
     }
   
   }
