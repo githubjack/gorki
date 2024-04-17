@@ -61,7 +61,6 @@ footer{
         height: 66px;
         display: flex;
         padding-inline: 2rem;
-        /* background-color: #ffd700; */
         background-color: transparent;
         color: #010F40;
     }
@@ -142,8 +141,6 @@ footer{
         height: 66px;
         display: flex;
         padding-inline: 2rem;
-        /* background-color: #ffd700;
-        color: #938f8f; */
         background-color: transparent;
         color: #010F40;
     }

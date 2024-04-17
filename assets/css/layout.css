@@ -2,10 +2,9 @@
 Layouts 
 */
 .hero-container {
-    /* width: 100%;
-    height: auto; */
     background-color: var(--mid-tone-clr);
-    /* padding-block: var(--vs-xl); */
+
+    background-image: linear-gradient(45deg, #143A3D 50%,#124750 75%, #1E6D74 100%);
   }
   
   

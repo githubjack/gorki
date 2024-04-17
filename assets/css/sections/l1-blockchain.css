@@ -24,12 +24,15 @@
     flex-direction: column;
     justify-content: flex-start;
 }
-.picture-element {
-    display: flex;
-    flex: 1;
-}
+
 .custom-html {
     display: flex;
+    width: 720px;
+    margin-inline: auto;
+    justify-content: center;
+    background-image: url(./../../images/timeline-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
 }
 
 @media screen and (min-width: 300px) {
@@ -37,7 +40,47 @@
     .blockchain-container {
       width: 100%;
     }
+    .blockchain-content .question-mark,
+    .blockchain-content .content-group {
+       opacity: 0;
+    }
+  }
 
+  @media screen and (min-width: 768px) {
+    .blockchain-content {
+        position: relative;
+        margin-block: 2rem;
+    }
+    .blockchain-content .question-mark {
+        position: absolute;
+        width: 122px;
+        height: 216px;
+        font-size: 200px;
+        font-weight: 300;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--lemon-line-clr-800);
+        opacity: 50%;
+    }
+    .blockchain-content .content-group {
+        padding-block: 248px 0;
+        opacity: 1;
+    }
+
+    .content-group .labels {
+
+        width: 720px;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-group .labels .label {
+        margin-inline: 5px;
+        color: var(--lemon-line-clr-800);
+        font-size:13px;
+    }
   }
 
   @media screen and (min-width: 990px) {
@@ -63,7 +106,40 @@
     }
     .blockchain-title {
         line-height: 52px;
-
     }
-  
+
+    .blockchain-content {
+        position: relative;
+        margin-block: 2rem;
+    }
+    .blockchain-content .question-mark {
+        position: absolute;
+        width: 122px;
+        height: 216px;
+        font-size: 200px;
+        font-weight: 300;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--lemon-line-clr-800);
+        opacity: 50%;
+    }
+    .blockchain-content .content-group {
+        padding-block: 248px 0;
+        opacity: 1;
+    }
+
+    .content-group .labels {
+
+        width: 720px;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-group .labels .label {
+        margin-inline: 5px;
+        color: var(--lemon-line-clr-800);
+        font-size:13px;
+    }
   }

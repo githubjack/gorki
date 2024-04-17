@@ -5,8 +5,6 @@ template.innerHTML = `
             display: inline-flex;
             align-items: center;
             justify-content: space-evenly;
-            // width: 480px;
-            // margin-inline: auto;
             position: relative;
             z-index: 2;
             margin-inline: 1rem;
@@ -20,15 +18,12 @@ template.innerHTML = `
             transition: transform .5s cubic-bezier(0.860, 0.000, 0.070, 1.000);
             width: 160px;
             height: 64px;
-            // background: rgba(214, 254, 82, 0.8);
             box-shadow: 4px 8px 4px 2px rgba(0, 0, 0, 0.25);
             border-radius: 8px 16px;
             padding: 10px;
             display: flex;
             align-tems: center;
-            font-size: 16px;
-            // color: black;
-
+            font-size: 12px;
         }
        svg {
             width: 40px;
@@ -40,11 +35,15 @@ template.innerHTML = `
     </style>
 
     <div class='timeline-container'>
-        <svg viewBox="0 0 14 14" id="node-alert" class="alert">
-            <rect x="0.5" y="0.5" width="13" height="13" rx="6.5" fill="#37AD00" stroke="#37AD00"/>
+        <svg viewBox="0 0 49 49" class="alert">
+            <rect x="1.5" y="1.5" width="46" height="46" fill="#040B14" stroke="#37AD00" stroke-width="3"/>
+            <rect x="19" y="19" width="12" height="12" fill="#37AD00"/>
         </svg>
-        <svg viewBox="0 0 14 14" id="node-exit" class="cancel">
-            <rect x="0.5" y="0.5" width="13" height="13" rx="6.5" fill="#D6FE52" stroke="#D6FE52"/>
+        </svg>
+        <svg viewBox="0 0 49 49" class="cancel">
+            <rect x="1.5" y="1.5" width="46" height="46" fill="#37AD00" stroke="#37AD00" stroke-width="3"/>
+            <rect x="17.7827" y="20.4038" width="3" height="16" transform="rotate(-45 17.7827 20.4038)" fill="#010F40"/>
+            <rect width="3" height="16" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 31.2178 20.4038)" fill="#010F40"/>
         </svg>
         <div class="message-container">
             <slot name="message" />

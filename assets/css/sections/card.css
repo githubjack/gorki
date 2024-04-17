@@ -27,16 +27,12 @@
   position:absolute;
   width: 36px;
   height: 36px;
-  /* left: -42px;
-  top: 6px; */
 }
 
 .card-banner .number-container .number{ 
   width: 100%;
 }
-/* .card-banner h2 {
-font-size: var(--fs-header-3);
-} */
+
 .card-header {
   color: var(--lime-green-900);
 }
@@ -46,10 +42,6 @@ font-size: var(--fs-header-3);
   border: 1px solid #3b4078;
 }
 
-.card-body {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0px 0px 8px 8px;
-}
 
 .card-body .card-text {
   color: var(--lemon-line-clr-900);
@@ -129,7 +121,6 @@ font-size: var(--fs-header-3);
 
   .card-list {
     flex-direction: row;
-    /* align-items: flex-end; */
     justify-content: space-evenly;
     width: 990px;
   }
